@@ -23658,6 +23658,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6231430085075911413, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -23744,8 +23748,8 @@ Camera:
   m_GameObject: {fileID: 1653998660}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -23770,7 +23774,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -25346,7 +25350,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 20.48, y: 20.48}
     newSize: {x: 2, y: 2.8125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -25585,7 +25589,7 @@ SpriteRenderer:
   m_SortingLayerID: 820058413
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 55d56573a4937f248b829d65585a6f55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 210328a7b52b915469b886c716496d33, type: 3}
   m_Color: {r: 0.735849, g: 0.728907, b: 0.728907, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25894,7 +25898,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 151.0941, y: 5.628, z: 0}
-  m_LocalScale: {x: 1.078451, y: 0.4110985, z: 1}
+  m_LocalScale: {x: 0.29657406, y: 0.11305209, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4646240517545725070}
@@ -26499,7 +26503,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 20.48, y: 20.48}
     newSize: {x: 2, y: 2.8125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

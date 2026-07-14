@@ -3280,7 +3280,7 @@ MonoBehaviour:
   attacksUntilQuestion: 2
   attackCooldown: 3
   rollingLogPrefab: {fileID: 4855631832967528648, guid: e2f260deec726904596e994958078693, type: 3}
-  rollingLogStageCount: {x: 10, y: 15, z: 20}
+  rollingLogStageCount: {x: 30, y: 45, z: 60}
   rollingLogStageSpeed: {x: 8, y: 9, z: 10}
   rollingLogStageAttackSpeed: {x: 1, y: 0.9, z: 0.8}
   maxRollingLogAttacksPerQuestionCycle: 1
@@ -4852,6 +4852,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4890,6 +4898,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -25396,6 +25396,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6599660567384273369, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: maxHealth
+      value: 
+      objectReference: {fileID: 11400000, guid: 004364bfe2629d14db5242279f0626b1, type: 2}
+    - target: {fileID: 6599660567384273369, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: currentHealth
+      value: 
+      objectReference: {fileID: 11400000, guid: 9209d002be5dff144ba91e8c244cf820, type: 2}
     - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

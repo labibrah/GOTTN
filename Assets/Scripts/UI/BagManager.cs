@@ -43,6 +43,7 @@ public class BagManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             ToggleBag();
+            petBubble.playerHasOpenedBag = true;
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -62,6 +63,7 @@ public class BagManager : MonoBehaviour
     {
         bagUIPanel.SetActive(false);
         itemDetailsPanel.SetActive(false);
+        petBubble.playerHasOpenedBag = true;
     }
 
     void PopulateBag()
@@ -90,6 +92,7 @@ public class BagManager : MonoBehaviour
     public void OnCloseDetailsButton()
     {
         itemDetailsPanel.SetActive(false);
+        petBubble.playerHasOpenedBag = true;
     }
 
     public void OnUseButton()

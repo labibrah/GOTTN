@@ -9,9 +9,10 @@ namespace World1BossFight
         private static readonly int SplitHash = Animator.StringToHash("Split");
         private static readonly int HideHash = Animator.StringToHash("Hide");
 
+        [SerializeField] private float damageAmount = 1f;
         [SerializeField] private float dissolveDelay;
-        [SerializeField] private Signal bossDamagedSignal;
-        
+        // removed bossDamagedSignal — not needed here
+
         private Animator _animator;
         private AudioSource _audioSource;
 
@@ -38,18 +39,21 @@ namespace World1BossFight
             
             Destroy(gameObject);
         }
-        
+
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
-                Debug.Log("Damaged Player");
-                bossDamagedSignal?.Raise();
+                PlayerExploring player = other.GetComponent<PlayerExploring>();
+                if (player != null)
+                    player.TakeDamage(damageAmount);
+
                 StopAllCoroutines();
                 StartCoroutine(DestroyRoutine());
             }
         }
-        
+
         private IEnumerator DestroyRoutine()
         {
             _animator.SetTrigger(HideHash);

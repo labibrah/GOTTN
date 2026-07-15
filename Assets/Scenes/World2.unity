@@ -2420,6 +2420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   smashSound: {fileID: 8300000, guid: d38824e141108b4428e5121cb640fc2d, type: 3}
+  petBubble: {fileID: 0}
 --- !u!95 &402631613
 Animator:
   serializedVersion: 7
@@ -5393,6 +5394,7 @@ MonoBehaviour:
   activateConditions: []
   portalAnimator: {fileID: 0}
   targetCamera: {fileID: 0}
+  sceneTracker: {fileID: 0}
 --- !u!61 &552918873
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7985,6 +7987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   smashSound: {fileID: 8300000, guid: d38824e141108b4428e5121cb640fc2d, type: 3}
+  petBubble: {fileID: 0}
 --- !u!82 &771938830
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11182,6 +11185,7 @@ MonoBehaviour:
   - Let's go!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!61 &1210448709
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35865,6 +35869,7 @@ MonoBehaviour:
   - Let's go!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!82 &1564764027
 AudioSource:
   m_ObjectHideFlags: 0
@@ -72566,7 +72571,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.54999995, y: 0.5, z: 0}
+  m_ChunkCullingBounds: {x: 0.5, y: 0.5, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -207112,6 +207117,7 @@ MonoBehaviour:
   activateConditions: []
   portalAnimator: {fileID: 0}
   targetCamera: {fileID: 0}
+  sceneTracker: {fileID: 0}
 --- !u!1 &4403444232629025665
 GameObject:
   m_ObjectHideFlags: 0
@@ -208129,6 +208135,10 @@ MonoBehaviour:
   audioSource: {fileID: 1549835427}
   correctSound: {fileID: 8300000, guid: 0f8cde85d2fb5ce4591ef3b129296c98, type: 3}
   wrongSound: {fileID: 8300000, guid: db4ffd0535ec1da49bfa631b341234a5, type: 3}
+  panelBackground: {fileID: 0}
+  correctFlashColor: {r: 0, g: 1, b: 0, a: 0.4}
+  wrongFlashColor: {r: 1, g: 0, b: 0, a: 0.4}
+  flashDuration: 0.3
   questionsSet: []
   PlayerPrefab: {fileID: 0}
   EnemyPrefab: {fileID: 0}
@@ -209033,6 +209043,7 @@ MonoBehaviour:
   - Hi explorer, my challenge for you is multiple choice
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
   sculptureID: 3
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -209547,6 +209558,7 @@ MonoBehaviour:
   - Hi explorer, my challenge for you is multiple choice
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -209753,6 +209765,10 @@ MonoBehaviour:
   audioSource: {fileID: 4520269471415495752}
   correctSound: {fileID: 8300000, guid: 0f8cde85d2fb5ce4591ef3b129296c98, type: 3}
   wrongSound: {fileID: 8300000, guid: db4ffd0535ec1da49bfa631b341234a5, type: 3}
+  panelBackground: {fileID: 0}
+  correctFlashColor: {r: 0, g: 1, b: 0, a: 0.4}
+  wrongFlashColor: {r: 1, g: 0, b: 0, a: 0.4}
+  flashDuration: 0.3
   questionsSet: []
   PlayerPrefab: {fileID: 0}
   EnemyPrefab: {fileID: 0}
@@ -209941,6 +209957,7 @@ MonoBehaviour:
   - Hi explorer, my challenge for you is multiple choice
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -211424,6 +211441,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547378438930649663, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547378438930649663, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3244232736934444002, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_Name
       value: CanvasBagGroup
@@ -211466,6 +211563,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4379301950652584889, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.3208008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -212043,6 +212196,7 @@ MonoBehaviour:
   - Hi explorer, my challenge for you is multiple choice
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1

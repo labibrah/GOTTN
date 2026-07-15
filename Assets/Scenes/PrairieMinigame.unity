@@ -19243,7 +19243,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.8, y: 2.68}
+  m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
 --- !u!1 &170786281
 GameObject:
@@ -24712,15 +24712,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1246770467
-RectTransform:
+--- !u!4 &1246770467
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246770466}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.4, y: 10.59, z: 0}
   m_LocalScale: {x: 3.68, y: 1.8077497, z: 0.7846817}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24728,11 +24729,6 @@ RectTransform:
   - {fileID: 1611235095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.4, y: 10.59}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246770469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24846,7 +24842,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SackGameManager
   gameStarted: 0
-  sackPrefab: {fileID: 4405805124749476485, guid: de9a4ae082962dd488e51369985221b3, type: 3}
+  itemPrefabs:
+  - {fileID: 8968728591756761316, guid: 3e84307be8eb6f9438e8f355934122e3, type: 3}
+  - {fileID: 8968728591756761316, guid: b0e61662bfaccc546b528d21b8ade23e, type: 3}
+  - {fileID: 8968728591756761316, guid: 0e75a74cb2328bf40a10ff268844ae5b, type: 3}
+  - {fileID: 8968728591756761316, guid: d3b9ae1ae3684fb4baa866dc09d3ffd7, type: 3}
+  - {fileID: 8968728591756761316, guid: 8f9ccb7072e8605479b2308f2391c165, type: 3}
+  - {fileID: 8968728591756761316, guid: a146fe00661fd914ca8cbcce7eff0941, type: 3}
+  - {fileID: 8968728591756761316, guid: 096923b6c0e660141b5b9a4f7d94e507, type: 3}
+  - {fileID: 8968728591756761316, guid: 415dbaecef3ce1947b4cf80f4b25324f, type: 3}
+  - {fileID: 8968728591756761316, guid: dc4b07eaf4c1d88408a7e17bdcb50d7e, type: 3}
   spawnPoint: {fileID: 1972715722}
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   winningItem: {fileID: 11400000, guid: 9d92480cc5c3cbf40949753d075360d8, type: 2}
@@ -25404,6 +25409,10 @@ PrefabInstance:
       propertyPath: currentHealth
       value: 
       objectReference: {fileID: 11400000, guid: 9209d002be5dff144ba91e8c244cf820, type: 2}
+    - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.3208008
+      objectReference: {fileID: 0}
     - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -34282,6 +34291,10 @@ PrefabInstance:
       propertyPath: switchPoint
       value: 
       objectReference: {fileID: 153629471}
+    - target: {fileID: 8829614045726191780, guid: 04f2e5050710ba34a86a4efba274f76a, type: 3}
+      propertyPath: currentDirection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

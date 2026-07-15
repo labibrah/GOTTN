@@ -4,10 +4,12 @@ using System.Collections;
 
 public class PrairieSack : MonoBehaviour
 {
+    [Header("Item")]
+    public string itemName;
     public enum Category { Clothing, Food, Household }
     public Category category;
 
-    public float speed = 3f;
+    public float speed = 10f;
     float AdjustedSpeed => speed * PrairieGameManager.Instance.difficultyMultiplier;
 
     public TextMeshProUGUI textLabel;
@@ -22,7 +24,8 @@ public class PrairieSack : MonoBehaviour
     {
         sackRenderers = GetComponentsInChildren<SpriteRenderer>();
         railSwitch = FindObjectOfType<PrairieSwitch>();
-        AssignRandomItem();
+
+        textLabel.text = itemName;
     }
 
     void Update()
@@ -59,11 +62,15 @@ public class PrairieSack : MonoBehaviour
         
     }
 
-    void Redirect()
-    {
-        redirected = true;
-        targetCart = railSwitch.GetCurrentTarget();
-    }
+void Redirect()
+{
+    Debug.Log("Redirect called!");
+
+    redirected = true;
+    targetCart = railSwitch.GetCurrentTarget();
+
+    Debug.Log("Target: " + targetCart.name);
+}
 
     void ResolveCart(PrairieCart cart)
     {
@@ -93,29 +100,4 @@ public class PrairieSack : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void AssignRandomItem()
-    {
-        string[] clothing = { "Bunny Hug", "Toque", "Parka" };
-        string[] food = { "Double-Double", "Poutine", "Saskatoon Pie" };
-        string[] household = { "Scrubby", "Chesterfield", "Snow Brush" };
-
-        int categoryIndex = Random.Range(0, 3);
-        int wordIndex = Random.Range(0, 3);
-
-        if (categoryIndex == 0)
-        {
-            category = Category.Clothing;
-            textLabel.text = clothing[wordIndex];
-        }
-        else if (categoryIndex == 1)
-        {
-            category = Category.Food;
-            textLabel.text = food[wordIndex];
-        }
-        else
-        {
-            category = Category.Household;
-            textLabel.text = household[wordIndex];
-        }
-    }
 }

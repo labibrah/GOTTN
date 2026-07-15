@@ -139021,6 +139021,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -139051,6 +139083,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3244232736934444002, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
@@ -139112,6 +139160,42 @@ PrefabInstance:
     - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.3208008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7834110421014453960, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_IsActive
@@ -159395,6 +159479,7 @@ MonoBehaviour:
   - Once you get that, it all starts to make sense.
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!114 &6610298951817600745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159423,6 +159508,7 @@ MonoBehaviour:
   - We grow all kinds of crops, like corn, wheat, and my favourite, oats for my cereal!
   dialogActive: 1
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!114 &6610298952209153079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159452,6 +159538,7 @@ MonoBehaviour:
     dock.
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!114 &6610298952395826087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159481,6 +159568,7 @@ MonoBehaviour:
   - "And parkas\u2026 you\u2019ll definitely need one of those for yourself too."
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!114 &6610298952838081892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159509,6 +159597,7 @@ MonoBehaviour:
   - Snow brush is exactly what it sounds like, for your car.
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!114 &6610298952929902873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159537,6 +159626,7 @@ MonoBehaviour:
     in Saskatchewan."
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!82 &6823835802356079760
 AudioSource:
   m_ObjectHideFlags: 0

@@ -476,6 +476,17 @@ MonoBehaviour:
   - Let's get started!
   - Use WASD to move around.
   - Press E to interact.
+  playerHasMoved: 0
+  playerHasSprinted: 0
+  playerHasInteracted: 0
+  playerHasThrownFireball: 0
+  playerHasSwungSword: 0
+  isPaused: 0
+  isWaitingForAction: 0
+  playerHasCollectedCoin: 0
+  playerHasCollectedHeart: 0
+  playerHasOpenedBag: 0
+  typewriterSpeed: 0.04
 --- !u!114 &93750204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,6 +947,7 @@ MonoBehaviour:
   - solve the answer or fight!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
   WizardQuizManager: {fileID: 2015426809}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
@@ -1552,6 +1564,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547378438930649663, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547378438930649663, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3244232736934444002, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_Name
       value: CanvasBagGroup
@@ -1594,6 +1686,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4379301950652584889, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.3208008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3672,6 +3820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   smashSound: {fileID: 8300000, guid: d38824e141108b4428e5121cb640fc2d, type: 3}
+  petBubble: {fileID: 0}
 --- !u!82 &771938830
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6879,10 +7028,11 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   doorSpriteRenderer: {fileID: 0}
   doorCollider: {fileID: 0}
-  requiredKey: {fileID: 11400000, guid: fab67e6de452a8e4e8118bac0193303b, type: 2}
+  requiredKeys: []
   Opened: {fileID: 11400000, guid: cbf5e2b6ada94904693acd2785e53f9a, type: 2}
   OpenedSprite: {fileID: -1023738625, guid: 16f6416b522295449b6391951cf40584, type: 3}
   ClosedSprite: {fileID: -1468978510, guid: 16f6416b522295449b6391951cf40584, type: 3}
+  requiredKeyCount: 0
 --- !u!61 &1409682010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7552,10 +7702,11 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   doorSpriteRenderer: {fileID: 0}
   doorCollider: {fileID: 0}
-  requiredKey: {fileID: 11400000, guid: fab67e6de452a8e4e8118bac0193303b, type: 2}
+  requiredKeys: []
   Opened: {fileID: 11400000, guid: cbf5e2b6ada94904693acd2785e53f9a, type: 2}
   OpenedSprite: {fileID: -1023738625, guid: 16f6416b522295449b6391951cf40584, type: 3}
   ClosedSprite: {fileID: -1468978510, guid: 16f6416b522295449b6391951cf40584, type: 3}
+  requiredKeyCount: 0
 --- !u!1 &1525163049
 GameObject:
   m_ObjectHideFlags: 0
@@ -107123,6 +107274,7 @@ MonoBehaviour:
   - if you can't escape, beat them up!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!61 &5129057339279615205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -107809,6 +107961,17 @@ MonoBehaviour:
   - Let's get started!
   - Use WASD to move around.
   - Press E to interact.
+  playerHasMoved: 0
+  playerHasSprinted: 0
+  playerHasInteracted: 0
+  playerHasThrownFireball: 0
+  playerHasSwungSword: 0
+  isPaused: 0
+  isWaitingForAction: 0
+  playerHasCollectedCoin: 0
+  playerHasCollectedHeart: 0
+  playerHasOpenedBag: 0
+  typewriterSpeed: 0.04
 --- !u!114 &6041301678006416310
 MonoBehaviour:
   m_ObjectHideFlags: 0

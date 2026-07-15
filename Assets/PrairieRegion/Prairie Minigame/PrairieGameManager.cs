@@ -7,7 +7,7 @@ public class PrairieGameManager : MonoBehaviour
 
     public bool gameStarted = false;
 
-    public GameObject sackPrefab;
+    public GameObject[] itemPrefabs;
     public Transform spawnPoint;
     public Inventory playerInventory;
     public Item winningItem;
@@ -50,7 +50,9 @@ public class PrairieGameManager : MonoBehaviour
 
     void SpawnSack()
     {
-        Instantiate(sackPrefab, spawnPoint.position, Quaternion.identity);
+        int randomIndex = Random.Range(0, itemPrefabs.Length);
+
+        Instantiate(itemPrefabs[randomIndex], spawnPoint.position, Quaternion.identity);
     }
 
     public void RegisterCorrect()

@@ -10,7 +10,7 @@ public class PrairieSwitch : MonoBehaviour
     public Transform switchPoint;
 
     void OnMouseDown()
-    {
+    {       
         if (!PrairieGameManager.Instance.gameStarted)
         {
             PrairieGameManager.Instance.gameStarted = true;
@@ -25,11 +25,13 @@ public class PrairieSwitch : MonoBehaviour
 
     void RotateSwitchPoint()
     {
+        Debug.Log("Switch direction: " + currentDirection);
+
         if (currentDirection == 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 25);
             transform.position = new Vector3(-1.85f, 3.47f, 0);
-            switchPoint.rotation = Quaternion.Euler(0, 0, 60);
+            switchPoint.rotation = Quaternion.Euler(0, 0, 40);
         }
 
         else if (currentDirection == 1)

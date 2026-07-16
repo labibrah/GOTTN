@@ -196,12 +196,9 @@ public class CanadaGeoGame : MonoBehaviour
 
 
     public void ReturnToMainWorld()
-{
-
-// Uncomment to make it dynamic. Right now always return to World1
-    //SceneTracker.Instance.ReturnToPreviousScene(true);
-     SceneManager.LoadScene("World1");
-}
+    {
+        SceneTracker.Instance.ReturnToPreviousScene(true);
+    }
 
     void EndGame()
     {

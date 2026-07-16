@@ -56,6 +56,12 @@ public class Sign : Interactable
                     currentDialogIndex = 0;
                     if (petBubble != null) petBubble.isPaused = false;
                     base.Interact();
+
+                    TrackableNPC trackable = GetComponent<TrackableNPC>();
+                    if (trackable != null)
+                    {
+                        trackable.RegisterInteraction();
+                    }
                 }
             }
         }

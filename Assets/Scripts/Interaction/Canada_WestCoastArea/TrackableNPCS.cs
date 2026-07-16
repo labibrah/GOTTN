@@ -9,8 +9,16 @@ public class TrackableNPC : MonoBehaviour
     }
     public void RegisterInteraction()
     {
-        if (hasBeenTalkedTo) return;
+        Debug.Log("RegisterInteraction called on " + gameObject.name);
+
+        if (hasBeenTalkedTo)
+        {
+            Debug.Log("Already counted.");
+            return;
+        }
+
         hasBeenTalkedTo = true;
+        Debug.Log("Calling WestCoastNPCTracker...");
         WestCoastNPCTracker.Instance.RegisterNPCTalkedTo();
     }
 }

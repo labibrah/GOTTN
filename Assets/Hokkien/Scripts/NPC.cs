@@ -85,6 +85,8 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void EndDialogue()
     {
+        Debug.Log("Dialogue ended with: " + gameObject.name);
+
         StopAllCoroutines();
         isDialogueActive = false;
 

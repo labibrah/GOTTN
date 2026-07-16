@@ -73,8 +73,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f45b3f33a932a4d8f81c4b7c2c3abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::World1BossFight.HedgeSplit
+  damageAmount: 1
   dissolveDelay: 2
-  bossDamagedSignal: {fileID: 11400000, guid: ba8d0d66b83c30d46835dc1c7d9cd084, type: 2}
 --- !u!82 &4776076964748714705
 AudioSource:
   m_ObjectHideFlags: 0

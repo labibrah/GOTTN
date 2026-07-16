@@ -53,13 +53,17 @@ public class Inventory : ScriptableObject, ISerializationCallbackReceiver
 
     public void ResetInventory()
     {
-        items.Clear();
-        currentItem = null;
-        coins = 0;
+        
+      Debug.Log("RESETTING INVENTORY!!!");
+      items.Clear();
+      currentItem = null;
+      coins = 0;
     }
 
     public void AddItem(Item item, int amount = 1)
     {
+        Debug.Log("ADDING ITEM: " + item.itemName);
+
         if (item != null)
         {
             InventoryEntry entry = items.Find(e => e.item == item);

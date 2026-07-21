@@ -45,13 +45,15 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-#if UNITY_EDITOR
-        // In editor, don't redirect — test the current scene directly
-        Debug.Log("Editor mode: skipping scene redirect");
-#else
-        // In a real build, always start from StartingPage
+//#if UNITY_EDITOR
+//        // In editor, don't redirect — test the current scene directly
+//        Debug.Log("Editor mode: skipping scene redirect");
+//#else
+//        // In a real build, always start from StartingPage
+//        SceneManager.LoadScene(startingSceneName);
+//#endif
+
         SceneManager.LoadScene(startingSceneName);
-#endif
 
         tutorialIntroShown.runtimeValue = false;
         houseIntroShown.runtimeValue = false;

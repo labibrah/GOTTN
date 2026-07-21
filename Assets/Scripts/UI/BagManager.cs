@@ -25,18 +25,33 @@ public class BagManager : MonoBehaviour
     private InventoryEntry selectedItem;
     public PetBubble petBubble;
 
-    void Start()
+void Start()
+{
+    Debug.Log("=== BAG START ===");
+
+    if (playerInventory == null)
     {
-        bagUIPanel.SetActive(false);
-        itemDetailsPanel.SetActive(false);
-        RefreshCoins();
-
-        closeButton.onClick.AddListener(CloseBag);
-        closeDetailsButton.onClick.AddListener(OnCloseDetailsButton);
-        useButton.onClick.AddListener(OnUseButton);
-        sellButton.onClick.AddListener(OnSellButton);
-
+        Debug.LogError("Inventory is NULL");
     }
+    else
+    {
+        Debug.Log("Inventory count: " + playerInventory.items.Count);
+
+        foreach (InventoryEntry entry in playerInventory.items)
+        {
+            Debug.Log("ITEM: " + entry.item.itemName);
+        }
+    }
+
+    bagUIPanel.SetActive(false);
+    itemDetailsPanel.SetActive(false);
+    RefreshCoins();
+
+    closeButton.onClick.AddListener(CloseBag);
+    closeDetailsButton.onClick.AddListener(OnCloseDetailsButton);
+    useButton.onClick.AddListener(OnUseButton);
+    sellButton.onClick.AddListener(OnSellButton);
+}
 
     void Update()
     {

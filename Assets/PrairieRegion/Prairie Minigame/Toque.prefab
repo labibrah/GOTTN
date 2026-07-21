@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PrairieSack
   itemName: 
   category: 0
-  speed: 10
+  speed: 3
   textLabel: {fileID: 0}
 --- !u!50 &-5588532391662967566
 Rigidbody2D:

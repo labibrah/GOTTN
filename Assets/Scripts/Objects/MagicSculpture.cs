@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class MagicSculpture : Sign
 {
-
+    public Inventory playerInventory;
+    public Item winningItem;
     public int sculptureID;
     public SpriteRenderer spriteRenderer;
     public bool isCompleted = false;
@@ -126,6 +127,12 @@ public class MagicSculpture : Sign
         if (success)
         {
             isCompleted = true;
+
+        if (winningItem != null)
+        {
+            playerInventory.AddItem(winningItem);
+        }
+
             Debug.Log($"Sculpture {sculptureID} completed!");
             if (sculptureCompletion != null)
             {

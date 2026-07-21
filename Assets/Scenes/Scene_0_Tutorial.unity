@@ -230,6 +230,51 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
   m_PrefabInstance: {fileID: 2024992403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &311098867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311098869}
+  - component: {fileID: 311098868}
+  m_Layer: 0
+  m_Name: PersistentAssetHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &311098868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311098867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e51d7f54754fc45b8bda78104b1153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentAssetHolder
+  playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
+--- !u!4 &311098869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311098867}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &365253408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6588175897776169320, guid: cb883cd59d9201743a8143886f0e45e6, type: 3}
@@ -4035,7 +4080,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b4b5210e38f5db4bbcbe63076f5ad03, type: 2}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: startMessages.Array.size
-      value: 22
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[0]'
@@ -4047,7 +4092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[2]'
-      value: "Use WASD or arrow keys to move around the world \u2014 give it a try!"
+      value: Use WASD or arrow keys to move around the world, give it a try!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[3]'
@@ -4067,7 +4112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[7]'
-      value: "Try it out \u2014 interact with the sign in this room by pressing E!"
+      value: Try it out, interact with the sign in this room by pressing E!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[8]'
@@ -4075,7 +4120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[9]'
-      value: "Perfect! Now press F to throw fireballs \u2014 go ahead!"
+      value: Perfect! Now press F to throw fireballs, go ahead!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[10]'
@@ -4095,36 +4140,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[14]'
-      value: "That shiny coin in the bottom left of this room \u2014 walk over it
-        to collect it!"
+      value: Coins will be hidden through the different areas you visit.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[15]'
-      value: WAIT_COIN
+      value: See if you can collect all 5 of them!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[16]'
-      value: "Well done! Hearts restore your health \u2014 grab that one to stay
-        strong!"
+      value: The first coin is in the bottom left of this room, walk over it to collect
+        it!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[17]'
-      value: Grab the heart at the bottom right of the room.
+      value: WAIT_COIN
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[18]'
-      value: WAIT_HEART
+      value: Grab the heart at the bottom right of the room.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[19]'
-      value: Press B to open bag to see items collected. You will need 5 keys!
+      value: Well done! Hearts restore your health, grab that one to stay strong!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[20]'
-      value: WAIT_BAG
+      value: WAIT_HEART
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[21]'
+      value: Press B to open bag to see items collected. You will need 5 keys!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[22]'
+      value: WAIT_BAG
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[23]'
+      value: Walk up to the door when you are ready to start exploring!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[24]'
       value: Walk up to the door when you are ready to start exploring!
       objectReference: {fileID: 0}
     - target: {fileID: 8637259316320850483, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
@@ -6666,6 +6722,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1653998663}
+  - {fileID: 311098869}
   - {fileID: 786281813}
   - {fileID: 2024992403}
   - {fileID: 3637728756748271787}

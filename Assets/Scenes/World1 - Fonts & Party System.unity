@@ -466,6 +466,31 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   baseDisplayDuration: 4
   hasShownIntroduction: {fileID: 11400000, guid: e52eef2a91c40ff45b093f4fcbccaf40, type: 2}
+  startMessages:
+  - Before we begin, let us learn the controls!
+  - "Use WASD or the arrow keys to move around \u2014 give it a try!"
+  - WAIT_MOVE
+  - Well done! Now press E to interact with characters and objects.
+  - "Try it out \u2014 interact with the sign to your left!"
+  - WAIT_INTERACT
+  - "Perfect! Now press F to throw fireballs \u2014 go ahead!"
+  - WAIT_FIREBALL
+  - Excellent! Left-click to swing your sword.
+  - You see that pot? Break it by left-clicking your mouse!
+  - WAIT_SWORD
+  - Outstanding! You are ready to begin your adventure!
+  - Press E on the door when you are ready to start exploring!
+  playerHasMoved: 0
+  playerHasSprinted: 0
+  playerHasInteracted: 0
+  playerHasThrownFireball: 0
+  playerHasSwungSword: 0
+  isPaused: 0
+  isWaitingForAction: 0
+  playerHasCollectedCoin: 0
+  playerHasCollectedHeart: 0
+  playerHasOpenedBag: 0
+  typewriterSpeed: 0.04
 --- !u!114 &93750204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,6 +911,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: fe0276d93574f7c4997e5146bc70399d, type: 3}
   interactSignal: {fileID: 0}
+  firstInteractionDone: {fileID: 0}
+  flashingAnimator: {fileID: 0}
   dialogBox: {fileID: 49120102}
   dialogText: {fileID: 2015795234}
   dialogs:
@@ -893,6 +920,7 @@ MonoBehaviour:
   - solve the answer or fight!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
   WizardQuizManager: {fileID: 2015426809}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
@@ -935,7 +963,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82, y: 1.14}
+    oldSize: {x: 2.05, y: 2.85}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -981,7 +1009,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82, y: 1.14}
+    oldSize: {x: 2.05, y: 2.85}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1431,6 +1459,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316150956892866646, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393055515062243210, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434197968855339155, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547378438930649663, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547378438930649663, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571617087695619164, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169507065334218829, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3244232736934444002, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_Name
       value: CanvasBagGroup
@@ -1475,8 +1583,64 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5168275640166066292, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.3208008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487970482153291361, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7769912553649625230, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9037528735923898618, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
@@ -3740,6 +3904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   smashSound: {fileID: 8300000, guid: d38824e141108b4428e5121cb640fc2d, type: 3}
+  petBubble: {fileID: 0}
 --- !u!82 &771938830
 AudioSource:
   m_ObjectHideFlags: 0
@@ -78268,15 +78433,18 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 537774383e5fdee49b296d10315f1ade, type: 3}
   interactSignal: {fileID: 0}
+  firstInteractionDone: {fileID: 0}
+  flashingAnimator: {fileID: 0}
   doorType: 1
   isOpen: 0
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   doorSpriteRenderer: {fileID: 0}
   doorCollider: {fileID: 0}
-  requiredKey: {fileID: 11400000, guid: fab67e6de452a8e4e8118bac0193303b, type: 2}
+  requiredKeys: []
   Opened: {fileID: 11400000, guid: cbf5e2b6ada94904693acd2785e53f9a, type: 2}
   OpenedSprite: {fileID: -1023738625, guid: 16f6416b522295449b6391951cf40584, type: 3}
   ClosedSprite: {fileID: -1468978510, guid: 16f6416b522295449b6391951cf40584, type: 3}
+  requiredKeyCount: 0
 --- !u!61 &1409682010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78840,15 +79008,18 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 537774383e5fdee49b296d10315f1ade, type: 3}
   interactSignal: {fileID: 0}
+  firstInteractionDone: {fileID: 0}
+  flashingAnimator: {fileID: 0}
   doorType: 1
   isOpen: 0
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   doorSpriteRenderer: {fileID: 0}
   doorCollider: {fileID: 0}
-  requiredKey: {fileID: 11400000, guid: fab67e6de452a8e4e8118bac0193303b, type: 2}
+  requiredKeys: []
   Opened: {fileID: 11400000, guid: cbf5e2b6ada94904693acd2785e53f9a, type: 2}
   OpenedSprite: {fileID: -1023738625, guid: 16f6416b522295449b6391951cf40584, type: 3}
   ClosedSprite: {fileID: -1468978510, guid: 16f6416b522295449b6391951cf40584, type: 3}
+  requiredKeyCount: 0
 --- !u!1 &1525163049
 GameObject:
   m_ObjectHideFlags: 0
@@ -100537,6 +100708,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 19ee79ae6541aba4ca0f0a45c0f64d89, type: 3}
   interactSignal: {fileID: 0}
+  firstInteractionDone: {fileID: 0}
+  flashingAnimator: {fileID: 0}
   dialogBox: {fileID: 49120102}
   dialogText: {fileID: 2015795234}
   dialogs:
@@ -100548,6 +100721,7 @@ MonoBehaviour:
   - Now let's have a try!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!82 &1564764027
 AudioSource:
   m_ObjectHideFlags: 0
@@ -195829,7 +196003,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 2.048, y: 2.048}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -195875,7 +196049,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 2.048, y: 2.048}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -195958,6 +196132,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 0}
   interactSignal: {fileID: 0}
+  firstInteractionDone: {fileID: 0}
+  flashingAnimator: {fileID: 0}
   dialogBox: {fileID: 49120102}
   dialogText: {fileID: 2015795234}
   dialogs:
@@ -198435,7 +198611,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 2.048, y: 2.048}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -198933,7 +199109,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.65625, y: 0.5625}
+    oldSize: {x: 0.84, y: 0.72}
     newSize: {x: 0.4, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -198997,7 +199173,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.65625, y: 0.5625}
+    oldSize: {x: 0.84, y: 0.72}
     newSize: {x: 0.4, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -199194,7 +199370,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 2.048, y: 2.048}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -199502,6 +199678,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 875dec613f5e04947abc8aa6323e6e80, type: 2}
   portalAnimator: {fileID: 0}
   targetCamera: {fileID: 0}
+  sceneTracker: {fileID: 0}
 --- !u!1 &4432837459106373176
 GameObject:
   m_ObjectHideFlags: 0
@@ -199746,6 +199923,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 0}
   interactSignal: {fileID: 0}
+  firstInteractionDone: {fileID: 0}
+  flashingAnimator: {fileID: 0}
   dialogBox: {fileID: 49120102}
   dialogText: {fileID: 2015795234}
   dialogs:
@@ -199754,6 +199933,7 @@ MonoBehaviour:
   - if you can't escape, beat them up!
   dialogActive: 0
   currentDialogIndex: 0
+  petBubble: {fileID: 0}
 --- !u!1001 &5213387729840749503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200122,11 +200302,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petBubble: {fileID: 6041301678006416309}
   petTriggers:
-  - triggerSignal: {fileID: 11400000, guid: 40f621affb7bd4e4fa373c6dd3cc8c46, type: 2}
+  - triggerKey: 
+    triggerSignal: {fileID: 11400000, guid: 40f621affb7bd4e4fa373c6dd3cc8c46, type: 2}
     messageSequence: {fileID: 11400000, guid: 35a15708ca580154d8f0a77239b3b198, type: 2}
-  - triggerSignal: {fileID: 11400000, guid: 392483c3f30bc5f4896022bd1e52fa55, type: 2}
+  - triggerKey: 
+    triggerSignal: {fileID: 11400000, guid: 392483c3f30bc5f4896022bd1e52fa55, type: 2}
     messageSequence: {fileID: 11400000, guid: dde97b397561f364d82586606a69d3e2, type: 2}
-  - triggerSignal: {fileID: 11400000, guid: 5b973fe54786fb34b89fb6319baa179c, type: 2}
+  - triggerKey: 
+    triggerSignal: {fileID: 11400000, guid: 5b973fe54786fb34b89fb6319baa179c, type: 2}
     messageSequence: {fileID: 11400000, guid: 3e91f43135cdfa2488540b793bd35f14, type: 2}
 --- !u!4 &6041301678006416308
 Transform:
@@ -200161,6 +200344,31 @@ MonoBehaviour:
   offset: {x: 0, y: 0.5, z: 0}
   baseDisplayDuration: 4
   hasShownIntroduction: {fileID: 11400000, guid: a69cb8075abae4642937dfd332c3a835, type: 2}
+  startMessages:
+  - Before we begin, let us learn the controls!
+  - "Use WASD or the arrow keys to move around \u2014 give it a try!"
+  - WAIT_MOVE
+  - Well done! Now press E to interact with characters and objects.
+  - "Try it out \u2014 interact with the sign to your left!"
+  - WAIT_INTERACT
+  - "Perfect! Now press F to throw fireballs \u2014 go ahead!"
+  - WAIT_FIREBALL
+  - Excellent! Left-click to swing your sword.
+  - You see that pot? Break it by left-clicking your mouse!
+  - WAIT_SWORD
+  - Outstanding! You are ready to begin your adventure!
+  - Press E on the door when you are ready to start exploring!
+  playerHasMoved: 0
+  playerHasSprinted: 0
+  playerHasInteracted: 0
+  playerHasThrownFireball: 0
+  playerHasSwungSword: 0
+  isPaused: 0
+  isWaitingForAction: 0
+  playerHasCollectedCoin: 0
+  playerHasCollectedHeart: 0
+  playerHasOpenedBag: 0
+  typewriterSpeed: 0.04
 --- !u!114 &6041301678006416310
 MonoBehaviour:
   m_ObjectHideFlags: 0

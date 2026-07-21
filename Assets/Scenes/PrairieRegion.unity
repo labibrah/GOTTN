@@ -126022,6 +126022,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIConfirmPrompt
   panel: {fileID: 79526351}
   promptText: {fileID: 1522130221}
+--- !u!1001 &129998897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.188913
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.46473
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279882350371410133, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_Name
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: coinCollected
+      value: 
+      objectReference: {fileID: 11400000, guid: 9caf3a461269bf64ba80b854a1c49589, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 458a71df944303f439984601cc275e38, type: 3}
 --- !u!114 &198308507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160490,6 +160551,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1653998663}
+  - {fileID: 129998897}
   - {fileID: 1557676179}
   - {fileID: 3637728756748271787}
   - {fileID: 5798723592881553148}

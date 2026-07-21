@@ -547,28 +547,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186824100}
-  - component: {fileID: 186824099}
+  - component: {fileID: 186824101}
   m_Layer: 0
-  m_Name: NPCTracker
+  m_Name: WestCoastNPCTracker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &186824099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186824098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e291af67d7f6b47abfb9b5a9737ffe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrairieNPCTracker
-  totalNPCs: 5
-  NPCsVisited: {fileID: 11400000, guid: 8c20cd6fccf53fe43bc97cd8b26c86cc, type: 2}
 --- !u!4 &186824100
 Transform:
   m_ObjectHideFlags: 0
@@ -584,6 +570,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186824101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186824098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2264ef1daabeed43890598a5c14ec47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WestCoastNPCTracker
+  totalNPCs: 5
 --- !u!4 &203188397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
@@ -616,7 +615,7 @@ RectTransform:
   m_GameObject: {fileID: 247619820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5895191, y: 0.5895191, z: 0.5895191}
+  m_LocalScale: {x: 0.5895224, y: 0.5895224, z: 0.5895224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1238702518}
@@ -91778,6 +91777,67 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &493418847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182140394045465430, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279882350371410133, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: m_Name
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: coinCollected
+      value: 
+      objectReference: {fileID: 11400000, guid: 582583c63fbe72b42b88028aeac78fb9, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 458a71df944303f439984601cc275e38, type: 3}
 --- !u!1 &524801109
 GameObject:
   m_ObjectHideFlags: 0
@@ -135752,7 +135812,7 @@ GameObject:
   - component: {fileID: 1238702518}
   - component: {fileID: 1238702519}
   m_Layer: 0
-  m_Name: PrairieUI
+  m_Name: WestCoastNPCUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135783,9 +135843,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1238702517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d4cc4e2608874b439461224a78ba377, type: 3}
+  m_Script: {fileID: 11500000, guid: b55b6110161c7824d9579130952b4e4c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrairieNPCUI
+  m_EditorClassIdentifier: Assembly-CSharp::WestCoastNPCUI
   counterText: {fileID: 247619822}
 --- !u!82 &1336088345
 AudioSource:
@@ -175395,7 +175455,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6185436776591779028}
   - component: {fileID: 8560442972593214609}
-  - component: {fileID: 8560442972593214611}
   - component: {fileID: 6438987216336622366}
   - component: {fileID: 7931083406243637950}
   - component: {fileID: 3375471500714017971}
@@ -175418,11 +175477,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6185436776324629355}
   - component: {fileID: 8560442972862952238}
-  - component: {fileID: 8560442972862952240}
   - component: {fileID: 6438987216605869217}
   - component: {fileID: 7931083405975997697}
   - component: {fileID: 3375471500983788300}
   - component: {fileID: 1717529547}
+  - component: {fileID: 8560442972862952239}
   m_Layer: 0
   m_Name: beachnpc1
   m_TagString: Untagged
@@ -175440,7 +175499,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6185436775693653269}
   - component: {fileID: 8560442973573096784}
-  - component: {fileID: 8560442973573096786}
   - component: {fileID: 6438987216986235615}
   - component: {fileID: 7931083406419286911}
   - component: {fileID: 3375471500608664946}
@@ -175463,7 +175521,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6185436775564118692}
   - component: {fileID: 8560442971431418593}
-  - component: {fileID: 8560442971431418595}
   - component: {fileID: 6438987217330666862}
   - component: {fileID: 7931083405224395982}
   - component: {fileID: 3375471501708061379}
@@ -175490,6 +175547,7 @@ GameObject:
   - component: {fileID: 7931083404982648797}
   - component: {fileID: 3375471501986386384}
   - component: {fileID: 1336088345}
+  - component: {fileID: 8560442971725595123}
   m_Layer: 0
   m_Name: ForestNPC
   m_TagString: Untagged
@@ -175859,24 +175917,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6878175845553353087}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793decd470f63034b996c3365ff2c574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrackableNPC
---- !u!114 &8560442971431418595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6878175845553353087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df0a52f04ee8fb4ba9c253db9a56dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrairieVisitNPC
-  npcID: 1
 --- !u!212 &8560442971725595122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -175935,6 +175980,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8560442971725595123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878175845831674476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793decd470f63034b996c3365ff2c574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrackableNPC
 --- !u!212 &8560442972115319854
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -176063,19 +176120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793decd470f63034b996c3365ff2c574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrackableNPC
---- !u!114 &8560442972593214611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6878175844559347471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df0a52f04ee8fb4ba9c253db9a56dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrairieVisitNPC
-  npcID: 3
 --- !u!212 &8560442972862952238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -176134,7 +176178,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8560442972862952240
+--- !u!114 &8560442972862952239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176143,10 +176187,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6878175844829083824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df0a52f04ee8fb4ba9c253db9a56dd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 793decd470f63034b996c3365ff2c574, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrairieVisitNPC
-  npcID: 2
+  m_EditorClassIdentifier: Assembly-CSharp::TrackableNPC
 --- !u!212 &8560442973573096784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -176212,24 +176255,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6878175845255065294}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793decd470f63034b996c3365ff2c574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrackableNPC
---- !u!114 &8560442973573096786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6878175845255065294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df0a52f04ee8fb4ba9c253db9a56dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrairieVisitNPC
-  npcID: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -176237,6 +176267,7 @@ SceneRoots:
   - {fileID: 146525022}
   - {fileID: 1235353894}
   - {fileID: 551433177}
+  - {fileID: 493418847}
   - {fileID: 2061432396}
   - {fileID: 629294632}
   - {fileID: 615978698}

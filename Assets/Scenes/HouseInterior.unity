@@ -20738,7 +20738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[3]'
-      value: ' and embark on a journey filled with adventure and learning.'
+      value: and embark on a journey filled with adventure and learning.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[4]'
@@ -20746,24 +20746,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[5]'
-      value: I have been told I am a bit clingy.
+      value: An evil mystic tree has been haunting Canada, you will need to defeat
+        it.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[6]'
-      value: Let us begin!
+      value: To do so you will need to collect keys by solving quizzes and puzzles.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[7]'
-      value: Be careful! Enemies will engage the moment you get too close.
+      value: With each key you get the tree becomes weaker.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[8]'
-      value: Read the signs on the map, they might contain important information!
+      value: I would advice you to collect all of the 5 keys available.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[9]'
-      value: Also, if you notice anything unsual, definitely try to interact with
-        it!
+      value: Read the signs on the map, they might contain important information!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[10]'
@@ -20771,19 +20771,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[11]'
-      value: Then finish the quiz to explore further. Good luck!
+      value: Then finish the quiz to get a key and explore further. Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[12]'
-      value: Then finish the quiz to explore further. Good luck!
+      value: Let us begin!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[13]'
-      value: Then finish the quiz to explore further. Good luck!
+      value: Also, if you notice anything unsual, definitely try to interact with
+        it!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[14]'
-      value: Good luck!
+      value: To do so you will need to collect keys by solving quizzes and puzzles.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[15]'
@@ -24897,6 +24898,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
+  winningItem: {fileID: 11400000, guid: d8949867016fb3c44b2aa7883cd39e3b, type: 2}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 0

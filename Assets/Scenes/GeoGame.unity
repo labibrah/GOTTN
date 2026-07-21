@@ -3072,6 +3072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fb66fefb36489429f1dc4f9850697a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CanadaGeoGame
+  playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
+  winningItem: {fileID: 11400000, guid: b621f435e2a6258479283241b1dc970f, type: 2}
   questionText: {fileID: 1785220666}
   feedbackText: {fileID: 1780012939}
   scoreText: {fileID: 1478543268}

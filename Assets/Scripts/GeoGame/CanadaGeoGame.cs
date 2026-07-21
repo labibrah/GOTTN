@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class CanadaGeoGame : MonoBehaviour
 {
+    public Inventory playerInventory;
+    public Item winningItem;
+
     [Header("UI")]
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI feedbackText;
@@ -204,12 +207,19 @@ public class CanadaGeoGame : MonoBehaviour
     {
         resultPanel.SetActive(true);
         resultText.text = "Final Score: " + score;
+        if (score > 10000)
+        {
+            if (winningItem != null)
+            {
+                playerInventory.AddItem(winningItem);
+            }
+        }
         ratingText.text = GetRating();
     }
 
     string GetRating()
     {
-        if (score > 10000) return "True Canadian! ??";
+        if (score > 10000) return "True Canadian! You get a reward key";
         if (score > 6000) return "Pretty good, eh!";
         if (score > 3000) return "Keep exploring Canada!";
         return "Time to study the map!";

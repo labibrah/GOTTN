@@ -4179,6 +4179,10 @@ PrefabInstance:
       propertyPath: 'startMessages.Array.data[23]'
       value: Walk up to the door when you are ready to start exploring!
       objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[24]'
+      value: Walk up to the door when you are ready to start exploring!
+      objectReference: {fileID: 0}
     - target: {fileID: 8637259316320850483, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: m_Name
       value: GuideFoxGroup

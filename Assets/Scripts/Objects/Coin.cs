@@ -6,7 +6,16 @@ public class Coin : Supply
 {
     public Inventory playerInventory;
     public PetBubble petBubble;
+    public BoolValue coinCollected;
 
+    private void Start()
+    {
+        if (coinCollected != null && coinCollected.runtimeValue)
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     public IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +28,10 @@ public class Coin : Supply
             }
             playerInventory.coins++;
             collected = true; // Mark the coin as collected
+            if (coinCollected != null)
+            {
+                coinCollected.runtimeValue = true;
+            }
             Debug.Log("Coin collected! Total coins: " + playerInventory.coins);
             supplySignal.Raise(); // Notify that the coin has been collected
             yield return new WaitForSeconds(0.3f); // Optional delay for sound effect

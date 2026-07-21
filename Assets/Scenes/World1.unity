@@ -7310,6 +7310,10 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: petBubble
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1173011929}
@@ -7317,6 +7321,10 @@ PrefabInstance:
       propertyPath: collectSound
       value: 
       objectReference: {fileID: 8300000, guid: 416927f222e85f6499baebd76b72e831, type: 3}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: coinCollected
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bdade79f568e3b45a4b46134c79f11a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67571,7 +67579,7 @@ Tilemap:
       - {fileID: -2039622145, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -751851284, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -1100563711, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -5, y: -32, z: 0}
@@ -67661,7 +67669,7 @@ Tilemap:
       - {fileID: -1728854765, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -1546377406, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 899141556, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -10, y: -30, z: 0}

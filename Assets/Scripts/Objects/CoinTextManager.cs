@@ -12,7 +12,7 @@ public class CoinTextManager : MonoBehaviour
     void Start()
     {
         if (playerInventory == null)
-        {
+        { 
             Debug.LogError("Player Inventory is not assigned in CoinTextManager.");
             return;
         }

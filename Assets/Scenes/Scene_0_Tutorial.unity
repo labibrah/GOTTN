@@ -4080,7 +4080,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b4b5210e38f5db4bbcbe63076f5ad03, type: 2}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: startMessages.Array.size
-      value: 22
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[0]'
@@ -4092,7 +4092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[2]'
-      value: "Use WASD or arrow keys to move around the world \u2014 give it a try!"
+      value: Use WASD or arrow keys to move around the world, give it a try!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[3]'
@@ -4112,7 +4112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[7]'
-      value: "Try it out \u2014 interact with the sign in this room by pressing E!"
+      value: Try it out, interact with the sign in this room by pressing E!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[8]'
@@ -4120,7 +4120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[9]'
-      value: "Perfect! Now press F to throw fireballs \u2014 go ahead!"
+      value: Perfect! Now press F to throw fireballs, go ahead!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[10]'
@@ -4140,36 +4140,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[14]'
-      value: "That shiny coin in the bottom left of this room \u2014 walk over it
-        to collect it!"
+      value: Coins will be hidden through the different areas you visit.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[15]'
-      value: WAIT_COIN
+      value: See if you can collect all 5 of them!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[16]'
-      value: "Well done! Hearts restore your health \u2014 grab that one to stay
-        strong!"
+      value: The first coin is in the bottom left of this room, walk over it to collect
+        it!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[17]'
-      value: Grab the heart at the bottom right of the room.
+      value: WAIT_COIN
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[18]'
-      value: WAIT_HEART
+      value: Grab the heart at the bottom right of the room.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[19]'
-      value: Press B to open bag to see items collected. You will need 5 keys!
+      value: Well done! Hearts restore your health, grab that one to stay strong!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[20]'
-      value: WAIT_BAG
+      value: WAIT_HEART
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[21]'
+      value: Press B to open bag to see items collected. You will need 5 keys!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[22]'
+      value: WAIT_BAG
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[23]'
       value: Walk up to the door when you are ready to start exploring!
       objectReference: {fileID: 0}
     - target: {fileID: 8637259316320850483, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}

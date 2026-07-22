@@ -30,6 +30,24 @@ public class SceneTracker : MonoBehaviour
         previousSceneName = SceneManager.GetActiveScene().name;
     }
 
+    public bool TryConsumePendingPosition(out Vector3 position)
+    {
+        if (shouldRespawnAfterLoad)
+        {
+            position = pendingRespawnPosition;
+            shouldRespawnAfterLoad = false;
+            return true;
+        }
+        if (isReturningFromBattle)
+        {
+            position = playerReturnPosition;
+            isReturningFromBattle = false;
+            return true;
+        }
+        position = Vector3.zero;
+        return false;
+    }
+
     public void ReturnToPreviousScene(bool isWin)
     {
         if (string.IsNullOrEmpty(previousSceneName))

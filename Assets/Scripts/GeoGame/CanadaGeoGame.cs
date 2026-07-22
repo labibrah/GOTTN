@@ -213,7 +213,7 @@ public class CanadaGeoGame : MonoBehaviour
             {
                 playerInventory.AddItem(winningItem);
             }
-        }
+        }  
         ratingText.text = GetRating();
     }
 

@@ -128,6 +128,15 @@ public class PlayerExploring : MonoBehaviour
             if (trail != null) trail.emitting = false;
         }
 
+        if (SceneTracker.Instance != null && SceneTracker.Instance.TryConsumePendingPosition(out Vector3 pos))
+        {
+            myRigidbody.position = pos;
+        }
+        else if (playerStorage != null)
+        {
+            myRigidbody.position = playerStorage.runtimeValue;
+        }
+
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         myRigidbody.position = StartingPosition.runtimeValue;

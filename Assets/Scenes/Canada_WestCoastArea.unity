@@ -136238,18 +136238,18 @@ PrefabInstance:
     - target: {fileID: 1008978331596373946, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: StartingPosition
       value: 
-      objectReference: {fileID: 11400000, guid: 607a5a705be6dca4fb689faa4c96d89c, type: 2}
+      objectReference: {fileID: 11400000, guid: 868c675c27fe01742844039ca9a42179, type: 2}
     - target: {fileID: 1008978331596373946, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: stepSoundManager
       value: 
       objectReference: {fileID: 146525023}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.2553453
+      value: 9.29
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14773798
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.z
@@ -175007,7 +175007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: World1
-  playerPosition: {x: -12, y: -1}
+  playerPosition: {x: -298.1, y: -1}
   playerStorage: {fileID: 11400000, guid: a87c36d17f4406241b8d69f19e769a9a, type: 2}
   FadeIn: {fileID: 8156895041981832410, guid: db1b1ae4dfc1c8c49836dc11962136f8, type: 3}
   FadeOut: {fileID: 8156895041981832410, guid: 2089d82a62e652342babd72bbc455fba, type: 3}

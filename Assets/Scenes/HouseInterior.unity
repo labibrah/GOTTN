@@ -25156,19 +25156,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: playerPosition.x
-      value: -7
+      value: -32.05
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: playerPosition.y
-      value: -1
+      value: -28.43
       objectReference: {fileID: 0}
     - target: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_Name
       value: SceneTransition
       objectReference: {fileID: 0}
     - target: {fileID: 5461993839193540287, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461993839193540287, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.48
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5461993839193540287, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25353,7 +25357,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0049630404, y: -0.073085606}
+  m_Offset: {x: -0.012595892, y: -0.07308555}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -25363,7 +25367,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.611935, y: 2.8198247}
+  m_Size: {x: 14.603348, y: 2.8198247}
   m_EdgeRadius: 0
 --- !u!1 &4563576973805640855
 GameObject:
@@ -26506,7 +26510,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.043450415, y: 2.9385583}
+  m_Offset: {x: 0.04344964, y: 2.9385583}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -26516,7 +26520,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.5412903, y: 3.3943563}
+  m_Size: {x: 14.497587, y: 3.3943563}
   m_EdgeRadius: 0
 --- !u!95 &9050122947865050184
 Animator:

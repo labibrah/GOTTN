@@ -6916,7 +6916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Canada_WestCoastArea
-  playerPosition: {x: 0, y: -4}
+  playerPosition: {x: 9, y: 0.4}
   playerStorage: {fileID: 11400000, guid: a87c36d17f4406241b8d69f19e769a9a, type: 2}
   FadeIn: {fileID: 8156895041981832410, guid: db1b1ae4dfc1c8c49836dc11962136f8, type: 3}
   FadeOut: {fileID: 8156895041981832410, guid: 2089d82a62e652342babd72bbc455fba, type: 3}
@@ -67579,7 +67579,7 @@ Tilemap:
       - {fileID: -2039622145, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -751851284, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -1100563711, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -5, y: -32, z: 0}
@@ -96594,11 +96594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6815641998803265146, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 6815641998803265146, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6815641998803265146, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99848,11 +99848,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a351edb5ab0885d4f9c36be611f20790, type: 2}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.33
+      value: 6.49
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.78
+      value: -24.02
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.z

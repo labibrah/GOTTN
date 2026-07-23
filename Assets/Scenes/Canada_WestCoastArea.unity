@@ -112670,11 +112670,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166940950463556883, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -453
+      value: -444.76
       objectReference: {fileID: 0}
     - target: {fileID: 2166940950463556883, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -211
+      value: -220.23
       objectReference: {fileID: 0}
     - target: {fileID: 2173532015010910062, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
       propertyPath: m_Type
@@ -175007,7 +175007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: World1
-  playerPosition: {x: -12, y: -1}
+  playerPosition: {x: -10.6, y: -9.28}
   playerStorage: {fileID: 11400000, guid: a87c36d17f4406241b8d69f19e769a9a, type: 2}
   FadeIn: {fileID: 8156895041981832410, guid: db1b1ae4dfc1c8c49836dc11962136f8, type: 3}
   FadeOut: {fileID: 8156895041981832410, guid: 2089d82a62e652342babd72bbc455fba, type: 3}

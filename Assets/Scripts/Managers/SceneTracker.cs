@@ -26,7 +26,7 @@ public class SceneTracker : MonoBehaviour
     public void RecordSceneAndPosition(Vector3 playerPos)
     {
         previousSceneName = SceneManager.GetActiveScene().name;
-        playerReturnPosition = playerPos + new Vector3(0f, .6f, 0f);
+        playerReturnPosition = playerPos - new Vector3(.52f, .6f, 0f);
     }
 
     public bool TryConsumePendingPosition(out Vector3 position)

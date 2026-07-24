@@ -137775,7 +137775,15 @@ PrefabInstance:
       value: 0.08799255
       objectReference: {fileID: 0}
     - target: {fileID: 3774728601208038471, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774728601208038471, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774728601208038471, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
@@ -137792,7 +137800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_Name
-      value: SceneTransition (1)
+      value: SceneTransitionWorld1
       objectReference: {fileID: 0}
     - target: {fileID: 5461993839193540287, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_LocalPosition.x

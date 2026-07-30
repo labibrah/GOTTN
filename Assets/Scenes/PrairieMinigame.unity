@@ -24848,9 +24848,9 @@ MonoBehaviour:
   - {fileID: 8968728591756761316, guid: 0e75a74cb2328bf40a10ff268844ae5b, type: 3}
   - {fileID: 8968728591756761316, guid: d3b9ae1ae3684fb4baa866dc09d3ffd7, type: 3}
   - {fileID: 8968728591756761316, guid: 8f9ccb7072e8605479b2308f2391c165, type: 3}
-  - {fileID: 8968728591756761316, guid: a146fe00661fd914ca8cbcce7eff0941, type: 3}
   - {fileID: 8968728591756761316, guid: 096923b6c0e660141b5b9a4f7d94e507, type: 3}
   - {fileID: 8968728591756761316, guid: 415dbaecef3ce1947b4cf80f4b25324f, type: 3}
+  - {fileID: 8968728591756761316, guid: e60755210f911674881ad8096c860172, type: 3}
   - {fileID: 8968728591756761316, guid: dc4b07eaf4c1d88408a7e17bdcb50d7e, type: 3}
   spawnPoint: {fileID: 1972715722}
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
@@ -24860,7 +24860,7 @@ MonoBehaviour:
   difficultyIncreaseRate: 0.05
   currentLane: 1
   correctCount: 0
-  winAmount: 1
+  winAmount: 10
   spawnInterval: 5
   audioSource: {fileID: 1324440514}
   winSound: {fileID: 8300000, guid: 912995446fdc5ef48a9b746c9a835492, type: 3}

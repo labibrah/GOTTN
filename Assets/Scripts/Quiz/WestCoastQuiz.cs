@@ -44,8 +44,23 @@ public class WestCoastQuiz : Interactable
     {
         if(dialogActive && Input.GetKeyDown(KeyCode.E) && firstInteractionDone.runtimeValue == true)
         {
-            TriggerQuiz();
-            dialogActive = false;
+            if (LonghouseGreeter.Instance != null && LonghouseGreeter.Instance.CanInteract())
+            {
+                TriggerQuiz();
+                dialogActive = false;
+            }
+           else
+            {
+                if (!dialogBox.activeSelf)
+                {
+                    dialogText.text = "You must speak with everyone else in the village first.";
+                    dialogBox.SetActive(true);
+                }
+                else
+                {
+                    dialogBox.SetActive(false);
+                }
+            }
         }        
         else if (dialogActive && Input.GetKeyDown(KeyCode.E))
         {
@@ -72,8 +87,8 @@ public class WestCoastQuiz : Interactable
                     dialogBox.SetActive(false);
                     dialogActive = false;
                     currentDialogIndex = 0;
-                    Debug.Log("Dialog ended, calling base Interact.");
-                    base.Interact();
+                    Debug.Log("Dialog ended, calling Interact.");
+                    Interact();
                 }
             }
         }
@@ -127,7 +142,10 @@ public class WestCoastQuiz : Interactable
 
     public void OnQuizCompletion(bool allCorrect)
     {
-        //the NPC disappears "into" the long house when all the questions are correct, so it does the inverser of allCorrect
-        gameObject.SetActive(!allCorrect);
+        if (allCorrect)
+        {
+            GameProgress.Instance.quizCompleted = true;
+        }
+        gameObject.SetActive(!GameProgress.Instance.quizCompleted);
     }
 }

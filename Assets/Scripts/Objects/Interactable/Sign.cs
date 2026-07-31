@@ -55,7 +55,7 @@ public class Sign : Interactable
                     dialogActive = false;
                     currentDialogIndex = 0;
                     if (petBubble != null) petBubble.isPaused = false;
-                    base.Interact();
+                    Interact();
 
                     TrackableNPC trackable = GetComponent<TrackableNPC>();
                     if (trackable != null)

@@ -34029,6 +34029,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 3
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -34514,6 +34516,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -35077,6 +35081,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -37505,6 +37511,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1

@@ -75668,7 +75668,7 @@ Tilemap:
       - {fileID: -206642813, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -2017942515, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -2139242571, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -5, y: -34, z: 0}
@@ -75728,7 +75728,7 @@ Tilemap:
       - {fileID: -1430184769, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 869347446, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 1214364107, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: -33, z: 0}
@@ -116564,6 +116564,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 3
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -117049,6 +117051,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -117612,6 +117616,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1
@@ -120040,6 +120046,8 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  playerInventory: {fileID: 0}
+  winningItem: {fileID: 0}
   sculptureID: 0
   spriteRenderer: {fileID: 0}
   isCompleted: 1

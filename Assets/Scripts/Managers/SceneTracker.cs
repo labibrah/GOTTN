@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class SceneTracker : MonoBehaviour
 {
     public static SceneTracker Instance;
-
     public string previousSceneName;
     public Vector3 playerReturnPosition;
     public bool isReturningFromBattle = false;
@@ -17,7 +16,6 @@ public class SceneTracker : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -28,7 +26,25 @@ public class SceneTracker : MonoBehaviour
     public void RecordSceneAndPosition(Vector3 playerPos)
     {
         previousSceneName = SceneManager.GetActiveScene().name;
-        playerReturnPosition = playerPos + new Vector3(-2f, -2f, 0f);
+        playerReturnPosition = playerPos - new Vector3(.52f, .6f, 0f);
+    }
+
+    public bool TryConsumePendingPosition(out Vector3 position)
+    {
+        if (shouldRespawnAfterLoad)
+        {
+            position = pendingRespawnPosition;
+            shouldRespawnAfterLoad = false;
+            return true;
+        }
+        if (isReturningFromBattle)
+        {
+            position = playerReturnPosition;
+            isReturningFromBattle = false;
+            return true;
+        }
+        position = Vector3.zero;
+        return false;
     }
 
     public void ReturnToPreviousScene(bool isWin)
@@ -37,19 +53,14 @@ public class SceneTracker : MonoBehaviour
         {
             Debug.LogWarning("No previous scene recorded!");
             SceneManager.LoadScene("World1_Revamped");
-            //return;
         }
-
         if (isWin)
         {
-            // Just load previous scene
             isReturningFromBattle = true;
             SceneManager.LoadScene(previousSceneName);
-
         }
         else
         {
-            // Set respawn flag and load previous scene
             if (PlayerRespawnManager.Instance != null)
             {
                 pendingRespawnPosition = PlayerRespawnManager.Instance.GetRespawnPoint();
@@ -62,41 +73,5 @@ public class SceneTracker : MonoBehaviour
                 SceneManager.LoadScene(previousSceneName);
             }
         }
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (shouldRespawnAfterLoad)
-        {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-            {
-                Debug.Log("Respawning player at: " + pendingRespawnPosition);
-                player.transform.position = pendingRespawnPosition;
-            }
-            else
-            {
-                Debug.LogWarning("Player not found in scene after load!");
-            }
-
-            shouldRespawnAfterLoad = false;
-        }
-
-        if (isReturningFromBattle)
-        {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-            {
-                Debug.Log("Returning player to recorded position: " + playerReturnPosition);
-                player.transform.position = playerReturnPosition;
-            }
-            else
-            {
-                Debug.LogWarning("Player not found in scene after load!");
-            }
-
-            isReturningFromBattle = false;
-        }
-
     }
 }

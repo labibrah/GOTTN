@@ -3,34 +3,41 @@ using UnityEngine;
 public class LonghouseGreeter : MonoBehaviour, IInteractable
 {
     public static LonghouseGreeter Instance;
-    private bool isUnlocked = false;
-
-    public GameObject lockedMessage; // optional "Talk to everyone first!" UI
+    public GameObject lockedMessage;
 
     void Awake()
     {
         Instance = this;
     }
 
-    public void Unlock()
+    void Start()
     {
-        isUnlocked = true;
-        if (lockedMessage != null)
-            lockedMessage.SetActive(false);
-        Debug.Log("Longhouse Greeter unlocked!");
-    }
+        Debug.Log("Greeter started. isUnlocked = " + GameProgress.Instance.longhouseUnlocked);
 
-    public bool CanInteract() => isUnlocked;
+        if (GameProgress.Instance != null && GameProgress.Instance.quizCompleted)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     public void Interact()
     {
-        if (!isUnlocked)
+        Debug.Log("Interact called. isUnlocked = " + GameProgress.Instance.longhouseUnlocked);
+        if (!GameProgress.Instance.longhouseUnlocked)
         {
             Debug.Log("Talk to all NPCs first!");
             return;
         }
-
-        // Launch your game here
         Debug.Log("Launching Longhouse game!");
+    }
+
+    public void Unlock()
+    {
+        GameProgress.Instance.longhouseUnlocked = true;
+    }
+
+    public bool CanInteract()
+    {
+        return GameProgress.Instance.longhouseUnlocked;
     }
 }

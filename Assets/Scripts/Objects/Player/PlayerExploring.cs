@@ -19,6 +19,7 @@ public class PlayerExploring : MonoBehaviour
     public float speed = 5f;
     public Rigidbody2D myRigidbody;
     public VectorValue StartingPosition;
+    public VectorValue playerStorage;
 
     [Header("Animation")]
     private Animator animator;
@@ -132,9 +133,17 @@ public class PlayerExploring : MonoBehaviour
             if (trail != null) trail.emitting = false;
         }
 
+        if (SceneTracker.Instance != null && SceneTracker.Instance.TryConsumePendingPosition(out Vector3 pos))
+        {
+            myRigidbody.position = pos;
+        }
+        else if (playerStorage != null)
+        {
+            myRigidbody.position = playerStorage.runtimeValue; 
+        }
+
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
-        myRigidbody.position = StartingPosition.runtimeValue;
         magicLevel.runtimeValue = magicLevel.initialValue;
 
         if (heartManager == null)

@@ -3,9 +3,7 @@ using UnityEngine;
 public class WestCoastNPCTracker : MonoBehaviour
 {
     public static WestCoastNPCTracker Instance;
-
     public int totalNPCs = 0;
-    private int talkedTo = 0;
 
     void Awake()
     {
@@ -26,11 +24,10 @@ public class WestCoastNPCTracker : MonoBehaviour
 
     public void RegisterNPCTalkedTo()
     {
-        talkedTo++;
-        Debug.Log("Talked to: " + talkedTo + " / " + totalNPCs);
+        GameProgress.Instance.npcsTalkedTo++;
+        Debug.Log("Talked to: " + GameProgress.Instance.npcsTalkedTo + " / " + totalNPCs);
         UpdateUI();
-
-        if (talkedTo >= totalNPCs)
+        if (GameProgress.Instance.npcsTalkedTo >= totalNPCs)
         {
             Debug.Log("All NPCs talked to! Unlocking Longhouse Greeter.");
             LonghouseGreeter.Instance.Unlock();
@@ -40,7 +37,7 @@ public class WestCoastNPCTracker : MonoBehaviour
     private void UpdateUI()
     {
         if (WestCoastNPCUI.Instance != null)
-            WestCoastNPCUI.Instance.UpdateCounter(talkedTo, totalNPCs);
+            WestCoastNPCUI.Instance.UpdateCounter(GameProgress.Instance.npcsTalkedTo, totalNPCs);
         else
             Debug.LogError("WestCoastNPCUI.Instance is null!");
     }

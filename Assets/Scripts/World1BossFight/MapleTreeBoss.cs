@@ -113,7 +113,7 @@ namespace World1BossFight
         {
             int keyCount = CountKeys();
             Debug.Log("Boss fight starting with " + keyCount + " keys");
-            ApplyDifficulty(keyCount);
+            // ApplyDifficulty(keyCount);
         }
 
         private int CountKeys()

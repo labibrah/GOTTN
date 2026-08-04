@@ -42,6 +42,10 @@ public class QuestGiver : Interactable
             }
         }
     }
+    public void SetQuestGiven(bool value)
+    {
+        questGiven = value;
+    }
     public virtual void Update()
     {
         if (dialogActive && Input.GetKeyDown(KeyCode.E))

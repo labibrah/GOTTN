@@ -24,6 +24,7 @@ public class SpawnedChest : Chest
         dialogBox.SetActive(false);
         raiseItemSignal.Raise();
         storedOpenState.runtimeValue = false;
+        GameProgress.Instance.totemChestOpened = true;
         Destroy(gameObject);
     }
 }

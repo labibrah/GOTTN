@@ -7,6 +7,8 @@ public class GameProgress : MonoBehaviour
     public int npcsTalkedTo;
     public bool longhouseUnlocked;
     public bool quizCompleted;
+    public bool totemPuzzleSolved;
+    public bool totemChestOpened;
 
     private void Awake()
     {

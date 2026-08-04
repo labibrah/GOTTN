@@ -119,6 +119,19 @@ public class PlayerExploring : MonoBehaviour
 
         defaultSlipSpeedMultiplier = slipSpeedMultiplier;
 
+        if (SceneTracker.Instance != null && SceneTracker.Instance.TryConsumePendingPosition(out Vector3 pos))
+        {
+            myRigidbody.position = pos;
+            transform.position = pos;
+            Physics2D.SyncTransforms();
+        }
+        else if (playerStorage != null)
+        {
+            myRigidbody.position = playerStorage.runtimeValue;
+            transform.position = playerStorage.runtimeValue;
+            Physics2D.SyncTransforms();
+        }
+
         if (footprintSystem == null)
             footprintSystem = GetComponent<FootprintsFromPlayerExploring>();
         if (footprintSystem != null)
@@ -127,15 +140,6 @@ public class PlayerExploring : MonoBehaviour
         foreach (var trail in slipTrails)
         {
             if (trail != null) trail.emitting = false;
-        }
-
-        if (SceneTracker.Instance != null && SceneTracker.Instance.TryConsumePendingPosition(out Vector3 pos))
-        {
-            myRigidbody.position = pos;
-        }
-        else if (playerStorage != null)
-        {
-            myRigidbody.position = playerStorage.runtimeValue; 
         }
 
         animator.SetFloat("moveX", 0);

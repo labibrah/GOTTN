@@ -1156,14 +1156,14 @@ RectTransform:
   m_GameObject: {fileID: 318307477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1836286, y: 2.1836286, z: 2.1836286}
+  m_LocalScale: {x: 1.5, y: 1.8, z: 2.1836286}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 146218486}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 478}
+  m_AnchoredPosition: {x: 16, y: 485}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318307479
@@ -1188,8 +1188,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bag
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 56ca4dbae2e8bce43a3d3e0b555d4177, type: 2}
-  m_sharedMaterial: {fileID: 3191691910904545777, guid: 56ca4dbae2e8bce43a3d3e0b555d4177, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c493bad491c91944ad10feccd9c94b4, type: 2}
+  m_sharedMaterial: {fileID: 8428554527591913776, guid: 7c493bad491c91944ad10feccd9c94b4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1213,8 +1213,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7497,7 +7497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Canada_WestCoastArea
-  playerPosition: {x: 9, y: 0.4}
+  playerPosition: {x: 9, y: 0.28}
   playerStorage: {fileID: 11400000, guid: a87c36d17f4406241b8d69f19e769a9a, type: 2}
   FadeIn: {fileID: 8156895041981832410, guid: db1b1ae4dfc1c8c49836dc11962136f8, type: 3}
   FadeOut: {fileID: 8156895041981832410, guid: 2089d82a62e652342babd72bbc455fba, type: 3}
@@ -68062,7 +68062,7 @@ Tilemap:
       - {fileID: 1735495596, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 1375449103, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -1584910275, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -8, y: -33, z: 0}
@@ -68222,7 +68222,7 @@ Tilemap:
       - {fileID: -1173904042, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -548097721, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -644406377, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: -31, z: 0}
@@ -97103,6 +97103,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5605350408543058418, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c493bad491c91944ad10feccd9c94b4, type: 2}
     - target: {fileID: 6815641998803265146, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.22
@@ -101277,7 +101281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.3207397
+      value: -2.3208008
       objectReference: {fileID: 0}
     - target: {fileID: 7401358632793883990, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -101337,7 +101341,8 @@ PrefabInstance:
       value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4718027527882880329, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       insertIndex: -1

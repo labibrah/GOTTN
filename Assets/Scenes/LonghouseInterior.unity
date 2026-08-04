@@ -28970,6 +28970,14 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Canada_WestCoastArea
       objectReference: {fileID: 0}
+    - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
+      propertyPath: playerPosition.x
+      value: -13.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
+      propertyPath: playerPosition.y
+      value: 4.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_Name
       value: SceneTransition
@@ -30259,6 +30267,42 @@ PrefabInstance:
     - target: {fileID: 5232110425483303420, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756268396660375837, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756268396660375837, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c493bad491c91944ad10feccd9c94b4, type: 2}
+    - target: {fileID: 5756268396660375837, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756268396660375837, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8428554527591913776, guid: 7c493bad491c91944ad10feccd9c94b4, type: 2}
+    - target: {fileID: 5756268396660375837, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820876763355224873, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820876763355224873, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820876763355224873, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820876763355224873, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 485
       objectReference: {fileID: 0}
     - target: {fileID: 7209182667961703379, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.y

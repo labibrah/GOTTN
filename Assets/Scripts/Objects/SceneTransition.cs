@@ -89,6 +89,9 @@ public class SceneTransition : MonoBehaviour
             else
                 Debug.LogWarning("SceneTracker is null, skipping.");
 
+            if (AnalyticsLogger.Instance != null)
+                AnalyticsLogger.Instance.SceneExit();
+
             StartCoroutine(FadeOutAndLoadScene());
         }
     }

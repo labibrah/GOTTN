@@ -108,6 +108,10 @@ public class PlayerExploring : MonoBehaviour
     [Header("UI")]
     public HeartManager heartManager; // drag HeartManager GameObject here
 
+    [Header("Analytics")]
+    [Tooltip("Seconds between position samples (also drives idle-time accrual).")]
+    public float positionSampleInterval = 0.25f;
+
     // --- Unity Methods ---
     void Start()
     {
@@ -148,6 +152,8 @@ public class PlayerExploring : MonoBehaviour
 
         if (heartManager == null)
             heartManager = FindFirstObjectByType<HeartManager>();
+
+        StartCoroutine(SamplePosition());
     }
 
     void LateUpdate()
@@ -205,7 +211,7 @@ public class PlayerExploring : MonoBehaviour
             if (change != Vector3.zero)
                 petBubble.playerHasMoved = true;
 
-            if (change != Vector3.zero && Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) )
+            if (change != Vector3.zero && Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
                 petBubble.playerHasSprinted = true;
 
             if (Input.GetKeyDown(KeyCode.F))
@@ -269,7 +275,13 @@ public class PlayerExploring : MonoBehaviour
             {
                 lastStepSoundTime = 0f;
                 stepSoundManager.PlayStepSound(transform.position);
+                if (AnalyticsLogger.Instance != null)
+                    AnalyticsLogger.Instance.IncrementCounter("steps");
             }
+
+            bool sprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+            if (sprinting && AnalyticsLogger.Instance != null)
+                AnalyticsLogger.Instance.AddSprintTime(Time.deltaTime);
         }
         else
         {
@@ -391,6 +403,27 @@ public class PlayerExploring : MonoBehaviour
         changeState(PlayerState.walk);
     }
 
+    /// <summary>
+    /// Periodically samples position for path-efficiency analysis, and
+    /// accrues idle time whenever the player is stationary and not in a
+    /// special state (slip/falling/interact). Runs on a fixed interval
+    /// rather than every frame to keep the log volume manageable.
+    /// </summary>
+    IEnumerator SamplePosition()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(positionSampleInterval);
+
+            if (AnalyticsLogger.Instance == null) continue;
+
+            AnalyticsLogger.Instance.LogPosition(myRigidbody.position);
+
+            if (change == Vector3.zero && currentState == PlayerState.walk)
+                AnalyticsLogger.Instance.AddIdleTime(positionSampleInterval);
+        }
+    }
+
     // --- Other Interaction Methods ---
     public void pushed(Vector3 direction, float slipping_time, bool ignoreCooldown = false)
     {
@@ -430,6 +463,9 @@ public class PlayerExploring : MonoBehaviour
             animator.SetBool("receive_item", true);
             currentState = PlayerState.interact;
             receiveItemSprite.sprite = inventory.currentItem.itemSprite;
+
+            if (AnalyticsLogger.Instance != null)
+                AnalyticsLogger.Instance.LogEvent("item_collected", "item=" + inventory.currentItem.itemName);
         }
         else
         {

@@ -3849,6 +3849,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 468099492}
+  signId: 
 --- !u!61 &1108133541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6018,7 +6019,7 @@ PrefabInstance:
     - target: {fileID: 4922159312561162790, guid: 3a67c634d2a7c224a9d44f79a49b1428, type: 3}
       propertyPath: 'groundSounds.Array.data[1].stepSounds.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 4e713ebccc6b6ad4296b5d95fbd6b095, type: 3}
+      objectReference: {fileID: 8300000, guid: d9ee15c2fb799b84cbe73c7f90392f2c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

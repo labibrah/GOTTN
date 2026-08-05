@@ -172,6 +172,13 @@ public class PlayerExploring : MonoBehaviour
     {
         lastStepSoundTime += Time.deltaTime;
 
+        if (BagManager.IsBagOpen)
+        {
+            change = Vector3.zero;
+            animator.SetBool("moving", false);
+            return;
+        }
+
         if (currentState == PlayerState.interact) return;
 
         // Slipping Logic takes priority
@@ -206,7 +213,10 @@ public class PlayerExploring : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButtonDown(0) && currentState != PlayerState.attack && currentState != PlayerState.falling)
+        if (Input.GetMouseButtonDown(0)
+            && !BagManager.IsBagOpen
+            && currentState != PlayerState.attack
+            && currentState != PlayerState.falling)
         {
             StartCoroutine(AttackCo());
         }

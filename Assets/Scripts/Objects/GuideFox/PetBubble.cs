@@ -10,6 +10,7 @@ public class PetBubble : MonoBehaviour
     public TextMeshProUGUI bubbleText;
     public Vector3 offset = new Vector3(1.5f, 2f, 0f);
     public float baseDisplayDuration = 4f;
+    public static bool IsDialogueActive = false;
     public BoolValue hasShownIntroduction;
 
     // Tutorial messages with optional wait conditions
@@ -123,7 +124,7 @@ public class PetBubble : MonoBehaviour
                 }
 
                 // First V press = complete text instantly
-                if (Input.GetKeyDown(KeyCode.V))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (typewriterCoroutine != null)
                     {
@@ -147,7 +148,7 @@ public class PetBubble : MonoBehaviour
                 elapsed = 0f;
                 while (elapsed < 0.5f)
                 {
-                    if (Input.GetKeyDown(KeyCode.V)) break;
+                    if (Input.GetKeyDown(KeyCode.E)) break;
                     elapsed += Time.deltaTime;
                     yield return null;
                 }
@@ -157,6 +158,8 @@ public class PetBubble : MonoBehaviour
         if (petMovement != null) petMovement.Disappear();
         bubbleCanvas.gameObject.SetActive(false);
         currentRoutine = null;
+
+        IsDialogueActive = false;
     }
 
     private IEnumerator WaitForAction(string actionType)
@@ -202,6 +205,8 @@ public class PetBubble : MonoBehaviour
     // Replace ShowMessage with this
     public void ShowMessage(string message)
     {
+        IsDialogueActive = true;
+
         bubbleCanvas.gameObject.SetActive(true);
         timer = 0f;
         showing = true;

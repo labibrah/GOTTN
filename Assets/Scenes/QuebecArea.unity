@@ -66253,7 +66253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
-      value: "What is tourti\xE8re?"
+      value: What is tourtiere?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
@@ -76425,8 +76425,8 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a42d3fda4dae8cf42b0f0002eb1288f9, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
-      value: "Ah, bienvenue! Welcome to Quebec \u2014 where the coffee is strong
-        and the winters are stronger!"
+      value: Ah, bienvenue! Welcome to Quebec where the coffee is strong and the
+        winters are stronger!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
@@ -76435,17 +76435,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[2]'
-      value: "Do not worry if you feel a little lost \u2014 Quebec has a way of making
-        everyone feel delightfully confused at first."
+      value: Do not worry if you feel a little lost Quebec has a way of making everyone
+        feel delightfully confused at first.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[3]'
-      value: "We are enjoying a warm tourti\xE8re \u2014 a traditional Quebec meat
-        pie eaten during the winter season."
+      value: "We are enjoying a warm tourti\xE8re a traditional Quebec meat pie eaten
+        during the winter season."
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[4]'
-      value: "Head up \u2014 someone will help you!"
+      value: Head up someone will help you!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[5]'
@@ -77512,8 +77512,8 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 799e4f20ed16ab642b9c350383829544, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
-      value: "Be careful where you step, Explorer \u2014 black ice is one of Canada's
-        sneakiest winter hazards."
+      value: Be careful where you step, Explorer black ice is one of Canada's sneakiest
+        winter hazards.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
@@ -101892,7 +101892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: World1
-  playerPosition: {x: 9.97, y: 5.1}
+  playerPosition: {x: 11.7, y: 4.1}
   playerStorage: {fileID: 11400000, guid: a87c36d17f4406241b8d69f19e769a9a, type: 2}
   FadeIn: {fileID: 8156895041981832410, guid: db1b1ae4dfc1c8c49836dc11962136f8, type: 3}
   FadeOut: {fileID: 8156895041981832410, guid: 2089d82a62e652342babd72bbc455fba, type: 3}

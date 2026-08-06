@@ -74,14 +74,33 @@ public class MagicSculpture : Sign
 
             if (!dialogBox.activeSelf)
             {
-                checkPrereqs();
+                if (hasPreparedDialogs)
+                {
+                    dialogActive = false;
+                    currentDialogIndex = 0;
+                    Debug.Log("Prereqs met, skipping dialogue and launching mini-game.");
+                    PlayerPrefab.GetComponent<PlayerExploring>().changeState(PlayerState.interact);
+                    switch (challengeType)
+                    {
+                        case ChallengeType.WordOrder:
+                            wordOrderManager.Launch(wordOrderData, OnMiniGameCompleted);
+                            break;
+                        case ChallengeType.MultipleChoice:
+                            quizManager.LaunchQuestion(questionData, OnMiniGameCompleted);
+                            break;
+                        case ChallengeType.FeatureMatch:
+                            featureMatchManager.Launch(featureMatchQuestions, OnMiniGameCompleted);
+                            break;
+                    }
+                    return;
+                }
+
                 dialogBox.SetActive(true);
                 currentDialogIndex = 0;
                 dialogText.text = actualDialogs.Length > 0 ? actualDialogs[currentDialogIndex] : "";
             }
             else
             {
-                checkPrereqs();
                 currentDialogIndex++;
                 if (currentDialogIndex < actualDialogs.Length)
                 {
@@ -92,25 +111,6 @@ public class MagicSculpture : Sign
                     dialogBox.SetActive(false);
                     dialogActive = false;
                     currentDialogIndex = 0;
-                    if (hasPreparedDialogs)
-                    {
-                        Debug.Log("All dialogs completed, launching mini-game.");
-                        PlayerPrefab.GetComponent<PlayerExploring>().changeState(PlayerState.interact);
-                        switch (challengeType)
-                        {
-                            case ChallengeType.WordOrder:
-                                wordOrderManager.Launch(wordOrderData, OnMiniGameCompleted);
-                                break;
-
-                            case ChallengeType.MultipleChoice:
-                                quizManager.LaunchQuestion(questionData, OnMiniGameCompleted);
-                                break;
-                            case ChallengeType.FeatureMatch:
-                                featureMatchManager.Launch(featureMatchQuestions, OnMiniGameCompleted);
-                                break;
-
-                        }
-                    }
                 }
             }
         }

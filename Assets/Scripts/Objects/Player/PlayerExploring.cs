@@ -176,6 +176,13 @@ public class PlayerExploring : MonoBehaviour
 
     void Update()
     {
+        if (PetBubble.IsDialogueActive && !petBubble.isWaitingForAction)
+        {
+            change = Vector3.zero;
+            animator.SetBool("moving", false);
+            return;
+        }
+
         lastStepSoundTime += Time.deltaTime;
 
         if (BagManager.IsBagOpen)
@@ -221,6 +228,7 @@ public class PlayerExploring : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)
             && !BagManager.IsBagOpen
+            && !UIConfirmPrompt.IsPromptOpen
             && currentState != PlayerState.attack
             && currentState != PlayerState.falling)
         {

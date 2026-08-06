@@ -4085,104 +4085,103 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b4b5210e38f5db4bbcbe63076f5ad03, type: 2}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: startMessages.Array.size
-      value: 24
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[0]'
-      value: Before we begin, let us learn the controls.
+      value: Before we begin, let us learn the controls. Press E to skip dialogues.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[1]'
-      value: Press V to skip dialogues.
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[2]'
       value: Use WASD or arrow keys to move around the world, give it a try!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[3]'
+      propertyPath: 'startMessages.Array.data[2]'
       value: WAIT_MOVE
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[4]'
+      propertyPath: 'startMessages.Array.data[3]'
       value: Use the SHIFT key while walking to sprint.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[5]'
+      propertyPath: 'startMessages.Array.data[4]'
       value: WAIT_SPRINT
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[5]'
+      value: Well done! Press E to interact with characters and objects in the room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[6]'
-      value: Well done! Press E to interact with characters and objects.
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[7]'
-      value: Try it out, interact with the sign in this room by pressing E!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[8]'
       value: WAIT_INTERACT
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[9]'
+      propertyPath: 'startMessages.Array.data[7]'
       value: Perfect! Now press F to throw fireballs, go ahead!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[10]'
+      propertyPath: 'startMessages.Array.data[8]'
       value: WAIT_FIREBALL
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[11]'
-      value: Excellent! Left-click to swing your sword.
+      propertyPath: 'startMessages.Array.data[9]'
+      value: Excellent! Left-click to swing your sword. Break the pot!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[12]'
-      value: You see that pot? Break it by left-clicking your mouse!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[13]'
+      propertyPath: 'startMessages.Array.data[10]'
       value: WAIT_SWORD
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[14]'
-      value: Coins will be hidden through the different areas you visit.
+      propertyPath: 'startMessages.Array.data[11]'
+      value: Coins will be hidden through different areas.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[15]'
+      propertyPath: 'startMessages.Array.data[12]'
       value: See if you can collect all 5 of them!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[16]'
-      value: The first coin is in the bottom left of this room, walk over it to collect
-        it!
+      propertyPath: 'startMessages.Array.data[13]'
+      value: The first coin is in the bottom left of this room, walk over it.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[17]'
+      propertyPath: 'startMessages.Array.data[14]'
       value: WAIT_COIN
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[18]'
+      propertyPath: 'startMessages.Array.data[15]'
       value: Grab the heart at the bottom right of the room.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[19]'
-      value: Well done! Hearts restore your health, grab that one to stay strong!
+      propertyPath: 'startMessages.Array.data[16]'
+      value: Hearts restore your health!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[20]'
+      propertyPath: 'startMessages.Array.data[17]'
       value: WAIT_HEART
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[21]'
+      propertyPath: 'startMessages.Array.data[18]'
       value: Press B to open bag to see items collected. You will need 5 keys!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[22]'
+      propertyPath: 'startMessages.Array.data[19]'
       value: WAIT_BAG
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[23]'
+      propertyPath: 'startMessages.Array.data[20]'
       value: Walk up to the door when you are ready to start exploring!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[21]'
+      value: You see that pot? Break it by left-clicking your mouse!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[22]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[23]'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[24]'

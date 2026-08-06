@@ -106893,7 +106893,7 @@ MonoBehaviour:
   needText: 1
   placeName: West Coast Area
   roomSignal: {fileID: 11400000, guid: 5b973fe54786fb34b89fb6319baa179c, type: 2}
-  text: {fileID: 2061432397}
+  text: {fileID: 0}
 --- !u!61 &648549618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113083,6 +113083,18 @@ PrefabInstance:
     - target: {fileID: 5868296531357520354, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868296531357520354, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868296531357520354, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.21960784
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868296531357520354, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.59607846
       objectReference: {fileID: 0}
     - target: {fileID: 5868296531357520354, guid: d4253b9f268593644b4c51f92808c48f, type: 3}
       propertyPath: m_RaycastTarget
@@ -174589,11 +174601,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4179476622513829316, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00016784668
+      value: -0.00002670288
       objectReference: {fileID: 0}
     - target: {fileID: 4179476622513829316, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0005050737
+      value: -0.00038987456
       objectReference: {fileID: 0}
     - target: {fileID: 4379301950652584889, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_LocalPosition.x
@@ -174778,17 +174790,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3258058242366406301, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+    - {fileID: 4909612760120704300, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3103180283255870401, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1238702518}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
---- !u!1 &2061432397 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4909612760120704300, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
-  m_PrefabInstance: {fileID: 2061432396}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &156797543996934766
 Transform:
   m_ObjectHideFlags: 0
@@ -174819,7 +174827,7 @@ MonoBehaviour:
   needText: 1
   placeName: 
   roomSignal: {fileID: 11400000, guid: 5b973fe54786fb34b89fb6319baa179c, type: 2}
-  text: {fileID: 2061432397}
+  text: {fileID: 0}
 --- !u!61 &2526740148540517927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174893,6 +174901,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
 --- !u!114 &3375471500714017971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174920,6 +174929,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
 --- !u!114 &3375471500983788300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174942,7 +174952,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1707178025}
   dialogText: {fileID: 1739819346}
   dialogs:
-  - "Look there, in the water \u2014 that magnificent creature is an orca!"
+  - Look there, in the water that magnificent creature is an orca!
   - Orcas, also known as killer whales, are found all across the world, but they
     thrive along Canada's west coast
   - Indigenous peoples of the Pacific Northwest have honored them for centuries.
@@ -174951,6 +174961,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
 --- !u!114 &3375471501293120524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174977,6 +174988,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
 --- !u!114 &3375471501708061379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175004,6 +175016,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
 --- !u!114 &3375471501986386384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175032,6 +175045,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
 --- !u!61 &3408239390900075463
 BoxCollider2D:
   m_ObjectHideFlags: 0

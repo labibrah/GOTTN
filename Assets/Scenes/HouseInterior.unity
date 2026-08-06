@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: ba88f85f166d1394aacb58303d0b40cf, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
-      value: "This is poutine \u2014 a true Canadian classic."
+      value: This is poutine a true Canadian classic.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
@@ -403,8 +403,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[2]'
-      value: "A game begins with a faceoff \u2014 two players battle to gain control
-        of the puck."
+      value: A game begins with a faceoff two players battle to gain control of the
+        puck.
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
@@ -658,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c5f954e2dc668064f8c0e371d1160ae6, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
-      value: "This is maple syrup \u2014 one of Canada's most beloved treasures."
+      value: This is maple syrup one of Canada's most beloved treasures.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
@@ -24767,7 +24767,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -24797,7 +24797,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 379.45532, y: 51.304886, z: -0.84033203, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24978,6 +24978,7 @@ MonoBehaviour:
   dialogActive: 0
   currentDialogIndex: 0
   petBubble: {fileID: 0}
+  signId: 
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   winningItem: {fileID: 11400000, guid: d8949867016fb3c44b2aa7883cd39e3b, type: 2}
   sculptureID: 0
@@ -24996,10 +24997,8 @@ MonoBehaviour:
   wordOrderManager: {fileID: 0}
   featureMatchManager: {fileID: 0}
   PlayerPrefab: {fileID: 0}
-  preparedDialogs:
-  - I am ready!
-  actualDialogs:
-  - I am ready!
+  preparedDialogs: []
+  actualDialogs: []
   hasPreparedDialogs: 0
   prereqs:
   - {fileID: 11400000, guid: c5f954e2dc668064f8c0e371d1160ae6, type: 2}
@@ -25370,8 +25369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.726, y: 154.9417}
-  m_SizeDelta: {x: 901.5717, y: 233.8413}
+  m_AnchoredPosition: {x: -5.726, y: 170.86086}
+  m_SizeDelta: {x: 901.5717, y: 202.0029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4258890819842988822
 MonoBehaviour:
@@ -25587,8 +25586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -192, y: -89}
-  m_SizeDelta: {x: 672.9347, y: 133.6284}
+  m_AnchoredPosition: {x: -8.915101, y: -113.99}
+  m_SizeDelta: {x: 311.3542, y: 52.026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5448635275598532990
 CanvasRenderer:

@@ -1,29 +1,10 @@
 using UnityEngine;
-
 public class PrairieVisitNPC : MonoBehaviour
 {
     public int npcID;
-    private bool playerInRange = false;
-    private bool visited = false;
 
-    void Update()
+    public void MarkVisited()
     {
-        if (playerInRange && !visited && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)))
-        {
-            visited = true;
-            PrairieNPCTracker.Instance.MarkVisited(npcID);
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-            playerInRange = true;
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-            playerInRange = false;
+        PrairieNPCTracker.Instance.MarkVisited(npcID);
     }
 }

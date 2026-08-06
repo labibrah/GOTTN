@@ -25,10 +25,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
     }
-
-
-
-
     public void takeDamage(float damage)
     {
         currentHealth.runtimeValue -= damage; // Reduce the player's health by the damage amount

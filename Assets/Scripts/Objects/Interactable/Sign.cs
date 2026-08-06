@@ -37,7 +37,6 @@ public class Sign : Interactable
                 audioSource.PlayOneShot(interactSound);
             if (!dialogBox.activeSelf)
             {
-                // Pause fox and flag interaction
                 if (petBubble != null)
                 {
                     petBubble.playerHasInteracted = true;
@@ -46,6 +45,8 @@ public class Sign : Interactable
                 dialogBox.SetActive(true);
                 currentDialogIndex = 0;
                 dialogText.text = dialogs.Length > 0 ? dialogs[currentDialogIndex] : "";
+
+                PetBubble.IsDialogueActive = true;
 
                 dialogStartTime = Time.time;
                 if (AnalyticsLogger.Instance != null)
@@ -61,9 +62,11 @@ public class Sign : Interactable
                 }
                 else
                 {
-                    // Dialog finished naturally — unpause fox
+                    
                     dialogBox.SetActive(false);
                     dialogActive = false;
+
+                    PetBubble.IsDialogueActive = false;
 
                     if (AnalyticsLogger.Instance != null)
                         AnalyticsLogger.Instance.LogEvent("dialogue_complete",
@@ -78,6 +81,12 @@ public class Sign : Interactable
                     {
                         trackable.RegisterInteraction();
                     }
+
+                    PrairieVisitNPC prairieVisit = GetComponent<PrairieVisitNPC>();
+                    if (prairieVisit != null)
+                    {
+                        prairieVisit.MarkVisited();
+                    }
                 }
             }
         }
@@ -87,7 +96,8 @@ public class Sign : Interactable
             dialogBox.SetActive(false);
             dialogActive = false;
             currentDialogIndex = 0;
-            if (petBubble != null) petBubble.isPaused = false; // unpause fox
+            PetBubble.IsDialogueActive = false;
+            if (petBubble != null) petBubble.isPaused = false;
         }
         else if (dialogBox.activeSelf && playerInRange && Input.GetKeyDown(KeyCode.Space))
         {
@@ -95,7 +105,8 @@ public class Sign : Interactable
             dialogBox.SetActive(false);
             dialogActive = false;
             currentDialogIndex = 0;
-            if (petBubble != null) petBubble.isPaused = false; // unpause fox
+            PetBubble.IsDialogueActive = false;
+            if (petBubble != null) petBubble.isPaused = false;
         }
         else if (dialogBox.activeSelf && playerInRange && Input.GetKeyDown(KeyCode.Return))
         {
@@ -103,7 +114,8 @@ public class Sign : Interactable
             dialogBox.SetActive(false);
             dialogActive = false;
             currentDialogIndex = 0;
-            if (petBubble != null) petBubble.isPaused = false; // unpause fox
+            PetBubble.IsDialogueActive = false;
+            if (petBubble != null) petBubble.isPaused = false;
         }
     }
 
@@ -144,7 +156,8 @@ public class Sign : Interactable
 
             dialogBox.SetActive(false);
             currentDialogIndex = 0;
-            if (petBubble != null) petBubble.isPaused = false; // unpause fox on exit
+            PetBubble.IsDialogueActive = false;
+            if (petBubble != null) petBubble.isPaused = false;
             context.Raise();
         }
     }

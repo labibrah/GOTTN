@@ -15,9 +15,8 @@ public class PrairieConfirmTrigger : MonoBehaviour
 
         if (!PrairieNPCTracker.Instance.AllVisited())
         {
-            UIConfirmPrompt.Instance.Show(
-                "TALK TO ALL THE PEOPLE IN THE AREA BEFORE ENTERING THE MINIGAME",
-                () => { }
+            UIConfirmPrompt.Instance.ShowInfo(
+                "Talk to all the people in the area before entering the minigame."
             );
             return;
         }
@@ -30,9 +29,8 @@ public class PrairieConfirmTrigger : MonoBehaviour
 
             hasTriggered = true;
 
-            UIConfirmPrompt.Instance.Show(promptMessage, () =>
+            UIConfirmPrompt.Instance.ShowConfirmation(promptMessage, () =>
             {
-                Debug.Log("CALLBACK EXECUTING");
                 SceneManager.LoadScene(sceneToLoad);
             });
         }

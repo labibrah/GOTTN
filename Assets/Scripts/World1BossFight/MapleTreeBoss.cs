@@ -220,28 +220,28 @@ namespace World1BossFight
                 attacksUntilQuestion = zeroKey_AttacksUntilQuestion;
 
                 // Rolling Log — insane
-                rollingLogStageSpeed = new Vector3(100f, 130f, 160f);
-                rollingLogStageCount = new Vector3Int(50, 60, 80);
-                rollingLogStageAttackSpeed = new Vector3(1f, 2f, 0.3f);
-                maxRollingLogAttacksPerQuestionCycle = 10;
-                rollingLogCountReduction = 0;
-                rollingLogAttackSpacingMultiplier = 0.7f;
+                rollingLogStageSpeed = new Vector3(10f, 20f, 35f);
+                rollingLogStageCount = new Vector3Int(10, 20, 30);
+                rollingLogStageAttackSpeed = new Vector3(.1f, .2f, 0.4f);
+                //maxRollingLogAttacksPerQuestionCycle = 10;
+               // rollingLogCountReduction = 0;
+                //rollingLogAttackSpacingMultiplier = 0.7f;
 
                 // Branch Strike — rapid fire
-                branchStrikeStageCount = new Vector3Int(100, 50, 60);
-                branchStrikeStageDelay = new Vector3(0.4f, 0.3f, 0.2f);
-                branchStrikeStageSpeed = new Vector3(8f, 10f, 12f);
-                branchStrikeStageDuration = new Vector3(0.8f, 0.6f, 0.5f);
-                branchStrikeStageAttackSpeed = new Vector3(0.3f, 0.2f, 0.15f);
+                branchStrikeStageCount = new Vector3Int(10, 30, 50);
+                branchStrikeStageDelay = new Vector3(0.1f, 0.1f, 0.2f);
+                branchStrikeStageSpeed = new Vector3(20f, 30f, 50f);
+                branchStrikeStageDuration = new Vector3(0.4f, 0.3f, 0.2f);
+                branchStrikeStageAttackSpeed = new Vector3(0.1f, 0.1f, 0.1f);
 
                 // Maple Leaf Slam — overwhelming
-                mapleLeafSlamStageCount = new Vector3Int(55, 60, 80);
-                mapleLeafSlamStageDelay = new Vector3(0.1f, 0.2f, 0.15f);
-                mapleLeafSlamStageAttackSpeed = new Vector3(10f, 20f, 30f);
+                mapleLeafSlamStageCount = new Vector3Int(15, 20, 35);
+                mapleLeafSlamStageDelay = new Vector3(0.3f, 0.2f, 0.1f);
+                mapleLeafSlamStageAttackSpeed = new Vector3(.2f, .2f, .1f);
 
                 // Hedge Split — barely any time to answer
-                hedgeSplitStageDelay = new Vector3(0.1f, 0.1f, 0.1f);
-                hedgeSplitStageQuestionDuration = new Vector3(5f, 5f, 5f); // almost impossible
+                hedgeSplitStageDelay = new Vector3(1.1f, 1.2f, 1.5f);
+                hedgeSplitStageQuestionDuration = new Vector3(1.6f, 1.8f, 2f); // almost impossible
 
                 // Minimal question phases — almost no damage chances
                 questionPhaseCounts = new Vector3Int(1, 1, 2);

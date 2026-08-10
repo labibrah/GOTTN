@@ -182,9 +182,6 @@ public class PetBubble : MonoBehaviour
             case "WAIT_INTERACT":
                 yield return new WaitUntil(() => playerHasInteracted && !isPaused);
                 break;
-            case "WAIT_FIREBALL":
-                yield return new WaitUntil(() => playerHasThrownFireball && !isPaused);
-                break;
             case "WAIT_SWORD":
                 yield return new WaitUntil(() => playerHasSwungSword && !isPaused);
                 break;

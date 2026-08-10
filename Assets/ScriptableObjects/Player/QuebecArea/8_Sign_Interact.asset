@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f7c983118709947a681ee0f1277f47, type: 3}
-  m_Name: BlackIceInteracted
+  m_Name: 8_Sign_Interact
   m_EditorClassIdentifier: Assembly-CSharp::BoolValue
   initialValue: 0
-  runtimeValue: 1
+  runtimeValue: 0

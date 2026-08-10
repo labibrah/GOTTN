@@ -176,7 +176,7 @@ public class PlayerExploring : MonoBehaviour
 
     void Update()
     {
-        if (PetBubble.IsDialogueActive && !petBubble.isWaitingForAction)
+        if (PetBubble.IsDialogueActive && petBubble != null && !petBubble.isWaitingForAction)
         {
             change = Vector3.zero;
             animator.SetBool("moving", false);

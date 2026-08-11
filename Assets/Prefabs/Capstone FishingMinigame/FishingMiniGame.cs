@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FishingMiniGame : MonoBehaviour
 {
+    public static bool IsFishing = false;
     [SerializeField] Transform topPivot;
     [SerializeField] Transform bottomPivot;
     [SerializeField] Transform fish;
@@ -56,6 +57,7 @@ public class FishingMiniGame : MonoBehaviour
         hookPullvelocity = 0f;
         fishPosotion = 0.5f;
         fishDestionation = Random.value;
+        IsFishing = true;
     }
 
     private void Update()
@@ -153,6 +155,7 @@ public class FishingMiniGame : MonoBehaviour
         }
 
         pause = false;
+        IsFishing = false;
     }
 
     void Hook()

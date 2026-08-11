@@ -139,6 +139,7 @@ public class Sign : Interactable
         {
             playerInRange = true;
             dialogActive = true;
+            InteractablesInRange++;
             currentDialogIndex = 0;
             context.Raise();
         }
@@ -149,6 +150,7 @@ public class Sign : Interactable
         {
             playerInRange = false;
             dialogActive = false;
+            InteractablesInRange = Mathf.Max(0, InteractablesInRange - 1);
 
             // Player walked away mid-dialogue without finishing or pressing
             // an explicit close key — still counts as an incomplete read.

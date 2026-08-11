@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public static int InteractablesInRange = 0;
     public bool playerInRange;
     public Signal context;
     public AudioSource audioSource;
@@ -71,6 +72,7 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            InteractablesInRange++;
             context.Raise();
         }
     }
@@ -80,6 +82,7 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            InteractablesInRange = Mathf.Max(0, InteractablesInRange - 1);
             context.Raise();
         }
     }

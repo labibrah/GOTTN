@@ -176,6 +176,13 @@ public class PlayerExploring : MonoBehaviour
 
     void Update()
     {
+        if (FishingMiniGame.IsFishing)
+        {
+            change = Vector3.zero;
+            animator.SetBool("moving", false);
+            return;
+        }
+
         if (PetBubble.IsDialogueActive && !petBubble.isWaitingForAction)
         {
             change = Vector3.zero;
@@ -226,7 +233,8 @@ public class PlayerExploring : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButtonDown(0)
+        if (Input.GetKeyDown(KeyCode.E)
+            && Interactable.InteractablesInRange == 0
             && !BagManager.IsBagOpen
             && !UIConfirmPrompt.IsPromptOpen
             && currentState != PlayerState.attack

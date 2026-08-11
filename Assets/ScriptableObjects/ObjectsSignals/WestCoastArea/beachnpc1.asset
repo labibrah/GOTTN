@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f7c983118709947a681ee0f1277f47, type: 3}
-  m_Name: beaNPC1
+  m_Name: beachnpc1
   m_EditorClassIdentifier: Assembly-CSharp::BoolValue
   initialValue: 0
   runtimeValue: 0

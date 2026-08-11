@@ -40,6 +40,7 @@ public class WestCoastQuiz : Interactable
         }
         
     }
+
     public virtual void Update()
     {
         if(dialogActive && Input.GetKeyDown(KeyCode.E) && firstInteractionDone.runtimeValue == true)
@@ -119,6 +120,7 @@ public class WestCoastQuiz : Interactable
         {
             dialogActive = true;
             currentDialogIndex = 0;
+            InteractablesInRange++;
             context.Raise();
         }
     }
@@ -129,6 +131,7 @@ public class WestCoastQuiz : Interactable
         {
             dialogActive = false;
             dialogBox.SetActive(false);
+            InteractablesInRange = Mathf.Max(0, InteractablesInRange - 1);
             context.Raise();
             currentDialogIndex = 0;
         }

@@ -186,12 +186,6 @@ namespace CodeMonkey.Utils {
             }
         }
 
-
-
-
-
-
-
         private static Vector3 GetWorldPositionFromUI() {
             Vector3 worldPosition = GetWorldCamera().ScreenToWorldPoint(Input.mousePosition);
             return worldPosition;

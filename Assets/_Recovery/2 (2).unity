@@ -65526,11 +65526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: playerPosition.x
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: playerPosition.y
-      value: 5.5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_Name
@@ -77114,8 +77114,8 @@ MonoBehaviour:
     isFinalStep: 0
   windEffectPrefab: {fileID: 5344841382174370764, guid: 2f80c33210831df4789ff90044b585b0, type: 3}
   player: {fileID: 1398441872}
-  idleSecondsBeforeWind: 10
-  cooldownAfterDismiss: 6
+  idleSecondsBeforeWind: 1
+  cooldownAfterDismiss: 1
 --- !u!4 &1317226514
 Transform:
   m_ObjectHideFlags: 0

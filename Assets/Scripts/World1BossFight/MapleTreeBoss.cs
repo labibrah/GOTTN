@@ -14,13 +14,13 @@ namespace World1BossFight
         public string[] answers = new string[4];
         public int correctIndex;
     }
-    
+
     public class MapleTreeBoss : MonoBehaviour
     {
         [Header("Health & Staging")]
         [SerializeField] private int maxHealth;
-        [Range(0,1)] [SerializeField] private float mediumStageUpperPercentage;
-        [Range(0,1)] [SerializeField] private float hardStageUpperPercentage;
+        [Range(0, 1)][SerializeField] private float mediumStageUpperPercentage;
+        [Range(0, 1)][SerializeField] private float hardStageUpperPercentage;
         [Space]
         [SerializeField] private GameObject bossHeartPrefab;
         [Space]
@@ -28,13 +28,13 @@ namespace World1BossFight
         [SerializeField] private Color stage1Color;
         [SerializeField] private Color stage2Color;
         [SerializeField] private Color stage3Color;
-        
+
         [Header("Extra")]
         [SerializeField] private Animator bridgeAnimator;
         [SerializeField] private GameObject enableOnFightStart;
         [SerializeField] private GameObject disableOnFightStart;
         [SerializeField] private Signal bossDefeatedSignal;
-        
+
         [Header("Questions")]
         [SerializeField] private QuestionBubble questionBubble;
         [SerializeField] private BossQuestion[] bossQuestions;
@@ -42,11 +42,11 @@ namespace World1BossFight
         [SerializeField] private TextMeshProUGUI[] questions;
         [SerializeField] private Transform[] answerPositions;
         [SerializeField] private GameObject questionMapleLeafSlamPrefab;
-        
+
         [Header("Attacks")]
         [SerializeField] private int attacksUntilQuestion;
         [SerializeField] private float attackCooldown;
-        
+
         [Header("Rolling Log Attack")]
         [SerializeField] private GameObject rollingLogPrefab;
         [SerializeField] private Vector3Int rollingLogStageCount;
@@ -59,7 +59,7 @@ namespace World1BossFight
         [SerializeField] private Transform leftRollingLogSpawnPoint;
         [SerializeField] private Transform rightRollingLogSpawnPoint;
         [SerializeField] private float rollingLogSpawnPointHeight;
-        
+
         [Header("Branch Strike Attack")]
         [SerializeField] private GameObject branchStrikePrefab;
         [SerializeField] private Vector3Int branchStrikeStageCount;
@@ -67,13 +67,13 @@ namespace World1BossFight
         [SerializeField] private Vector3 branchStrikeStageSpeed;
         [SerializeField] private Vector3 branchStrikeStageDuration;
         [SerializeField] private Vector3 branchStrikeStageAttackSpeed;
-        
+
         [Header("Maple Leaf Slam Attack")]
         [SerializeField] private GameObject mapleLeafSlamPrefab;
         [SerializeField] private Vector3Int mapleLeafSlamStageCount;
         [SerializeField] private Vector3 mapleLeafSlamStageDelay;
         [SerializeField] private Vector3 mapleLeafSlamStageAttackSpeed;
-        
+
         [Header("Hedge Split Attack")]
         [SerializeField] private GameObject hedgeSplitPrefab;
         [SerializeField] private Vector3 hedgeSplitStageDelay;
@@ -82,20 +82,44 @@ namespace World1BossFight
         [Header("Key System")]
         [SerializeField] private Inventory inventory;
 
+        // ---------------------------------------------------------------
+        // Difficulty tiers, driven by how many of the 5 keys the player
+        // has collected:
+        //   5 keys      -> Defeatable / Easy
+        //   2-4 keys    -> Hard
+        //   0-1 keys    -> Undefeatable
+        //
+        // Per-stage (X/Y/Z) attack values below come from the parameter
+        // sheet supplied by the boss fight's original creator
+        // ("LinguaQuest Boss Fight Parameters"), which gives a single
+        // Easy -> Hard number for each attack value. Those two numbers
+        // are used as follows:
+        //   - The Easy value is the Z (final in-fight phase) value for
+        //     the 5-key/Easy tier.
+        //   - The Hard value is the Z value for the 0-1 key/Undefeatable
+        //     tier.
+        //   - The 2-4 key/Hard tier sits at the midpoint between them.
+        //   - Within each tier, X (early phase) and Y (mid phase) ramp
+        //     up toward that tier's Z value, so the fight still gets
+        //     harder as the boss loses health, on top of getting harder
+        //     as fewer keys are collected.
+        // Maple Leaf Slam's attack speed and Hedge Split's delay/question
+        // duration are called out in the parameter sheet as being capped
+        // by animation length, so none of their values go past what's
+        // listed there.
+        // ---------------------------------------------------------------
 
-        [Header("Zero Keys — Undefeatable")]
+        [Header("0-1 Keys - Undefeatable")]
         [SerializeField] private float zeroKey_AttackCooldown = 150;
         [SerializeField] private int zeroKey_AttacksUntilQuestion = 1;
 
-
-        [Header("2-4 Keys — Hard")]
+        [Header("2-4 Keys - Hard")]
         [SerializeField] private float twoKey_AttackCooldown = 4;
         [SerializeField] private int twoKey_AttacksUntilQuestion = 6;
 
-        [Header("5 Keys — Defeatable")]
+        [Header("5 Keys - Defeatable")]
         [SerializeField] private float fiveKey_AttackCooldown = 2;
         [SerializeField] private int fiveKey_AttacksUntilQuestion = 3;
-
 
         private int _health;
         private int _attacksCount;
@@ -109,13 +133,6 @@ namespace World1BossFight
         private readonly List<int>[] _phaseQuestionQueue = new List<int>[3];
         private readonly int[] _lastBossQuestionIndexByPhase = { -1, -1, -1 };
 
-        private void Start()
-        {
-            int keyCount = CountKeys();
-            Debug.Log("Boss fight starting with " + keyCount + " keys");
-            // ApplyDifficulty(keyCount);
-        }
-
         private int CountKeys()
         {
             if (inventory == null)
@@ -127,17 +144,14 @@ namespace World1BossFight
             int count = 0;
             foreach (var entry in inventory.items)
             {
-                Debug.Log("Checking item: " + entry.item.itemName);
                 if (entry.item.itemName.Contains("Key") ||
                     entry.item.itemName.Contains("key") ||
                     entry.item.itemName == "KeyPiece")
                 {
                     count += entry.quantity;
-                    Debug.Log("Found key: " + entry.item.itemName + " quantity: " + entry.quantity);
                 }
             }
 
-            Debug.Log("Total keys found: " + count);
             return count;
         }
 
@@ -145,112 +159,116 @@ namespace World1BossFight
         {
             if (keys >= 5)
             {
-                // ?? DEFEATABLE ??
+                // DEFEATABLE / EASY (5 keys)
                 attackCooldown = fiveKey_AttackCooldown;
                 attacksUntilQuestion = fiveKey_AttacksUntilQuestion;
 
                 // Rolling Log
-                rollingLogStageSpeed = new Vector3(3f, 4f, 5f);
-                rollingLogStageCount = new Vector3Int(1, 2, 2);
-                rollingLogStageAttackSpeed = new Vector3(1f, 0.8f, 0.6f);
+                rollingLogStageCount = new Vector3Int(6, 8, 10);
+                rollingLogStageSpeed = new Vector3(2.9f, 4.9f, 7f);
+                rollingLogStageAttackSpeed = new Vector3(1.11f, 1.05f, 1f);
                 maxRollingLogAttacksPerQuestionCycle = 1;
                 rollingLogCountReduction = 1;
                 rollingLogAttackSpacingMultiplier = 1.2f;
 
                 // Branch Strike
-                branchStrikeStageCount = new Vector3Int(1, 2, 2);
-                branchStrikeStageDelay = new Vector3(1.5f, 1.2f, 1f);
-                branchStrikeStageSpeed = new Vector3(2f, 3f, 4f);
-                branchStrikeStageDuration = new Vector3(2f, 1.8f, 1.5f);
-                branchStrikeStageAttackSpeed = new Vector3(1.5f, 1.2f, 1f);
+                branchStrikeStageCount = new Vector3Int(9, 12, 15);
+                branchStrikeStageDelay = new Vector3(1.73f, 1.62f, 1.5f);
+                branchStrikeStageSpeed = new Vector3(8.7f, 11.9f, 15f);
+                branchStrikeStageDuration = new Vector3(1.14f, 1.07f, 1f);
+                branchStrikeStageAttackSpeed = new Vector3(0.34f, 0.32f, 0.3f);
 
-                // Maple Leaf Slam
-                mapleLeafSlamStageCount = new Vector3Int(1, 2, 2);
-                mapleLeafSlamStageDelay = new Vector3(1.5f, 1.2f, 1f);
-                mapleLeafSlamStageAttackSpeed = new Vector3(1.2f, 1f, 0.8f);
+                // Maple Leaf Slam (attack speed capped by animation length)
+                mapleLeafSlamStageCount = new Vector3Int(6, 8, 10);
+                mapleLeafSlamStageDelay = new Vector3(1.16f, 1.08f, 1f);
+                mapleLeafSlamStageAttackSpeed = new Vector3(0.57f, 0.54f, 0.5f);
 
-                // Hedge Split (question phase)
-                hedgeSplitStageDelay = new Vector3(2f, 1.8f, 1.5f);
-                hedgeSplitStageQuestionDuration = new Vector3(8f, 7f, 6f); // more time to answer
+                // Hedge Split (delay/question duration capped by animation length)
+                hedgeSplitStageDelay = new Vector3(8f, 7.5f, 7f);
+                hedgeSplitStageQuestionDuration = new Vector3(7.9f, 7.5f, 7f);
 
-                // Question phase counts — more questions means more damage chances
+                // More question phases = more chances to damage the boss
                 questionPhaseCounts = new Vector3Int(3, 3, 4);
 
-                Debug.Log("Difficulty: Defeatable (5 keys)");
+                Debug.Log("Boss difficulty: Defeatable (5 keys)");
             }
             else if (keys >= 2)
             {
-                // ?? HARD ??
+                // HARD (2-4 keys)
                 attackCooldown = twoKey_AttackCooldown;
                 attacksUntilQuestion = twoKey_AttacksUntilQuestion;
 
                 // Rolling Log
-                rollingLogStageSpeed = new Vector3(5f, 7f, 9f);
-                rollingLogStageCount = new Vector3Int(2, 3, 4);
-                rollingLogStageAttackSpeed = new Vector3(0.6f, 0.5f, 0.4f);
+                rollingLogStageCount = new Vector3Int(19, 21, 23);
+                rollingLogStageSpeed = new Vector3(14.4f, 16.4f, 18.5f);
+                rollingLogStageAttackSpeed = new Vector3(0.81f, 0.75f, 0.7f);
                 maxRollingLogAttacksPerQuestionCycle = 2;
                 rollingLogCountReduction = 0;
                 rollingLogAttackSpacingMultiplier = 0.95f;
 
                 // Branch Strike
-                branchStrikeStageCount = new Vector3Int(2, 3, 4);
-                branchStrikeStageDelay = new Vector3(1f, 0.8f, 0.6f);
-                branchStrikeStageSpeed = new Vector3(4f, 6f, 8f);
-                branchStrikeStageDuration = new Vector3(1.5f, 1.2f, 1f);
-                branchStrikeStageAttackSpeed = new Vector3(0.8f, 0.6f, 0.5f);
+                branchStrikeStageCount = new Vector3Int(27, 30, 33);
+                branchStrikeStageDelay = new Vector3(1.08f, 0.97f, 0.85f);
+                branchStrikeStageSpeed = new Vector3(26.2f, 29.4f, 32.5f);
+                branchStrikeStageDuration = new Vector3(0.74f, 0.67f, 0.6f);
+                branchStrikeStageAttackSpeed = new Vector3(0.24f, 0.22f, 0.2f);
 
                 // Maple Leaf Slam
-                mapleLeafSlamStageCount = new Vector3Int(2, 3, 4);
-                mapleLeafSlamStageDelay = new Vector3(1f, 0.8f, 0.6f);
-                mapleLeafSlamStageAttackSpeed = new Vector3(0.8f, 0.6f, 0.5f);
+                mapleLeafSlamStageCount = new Vector3Int(19, 21, 23);
+                mapleLeafSlamStageDelay = new Vector3(0.71f, 0.63f, 0.55f);
+                mapleLeafSlamStageAttackSpeed = new Vector3(0.37f, 0.34f, 0.3f);
 
                 // Hedge Split
-                hedgeSplitStageDelay = new Vector3(1.2f, 1f, 0.8f);
-                hedgeSplitStageQuestionDuration = new Vector3(5f, 4f, 3f); // less time
+                hedgeSplitStageDelay = new Vector3(5.2f, 4.7f, 4.25f);
+                hedgeSplitStageQuestionDuration = new Vector3(5.4f, 5f, 4.5f);
 
-                // Fewer question phases — less damage chances
+                // Fewer question phases = fewer damage chances
                 questionPhaseCounts = new Vector3Int(2, 2, 3);
 
-                Debug.Log("Difficulty: Hard (2-4 keys)");
+                Debug.Log("Boss difficulty: Hard (2-4 keys)");
             }
             else
             {
-                // ?? UNDEFEATABLE ??
+                // UNDEFEATABLE (0-1 keys)
                 attackCooldown = zeroKey_AttackCooldown;
                 attacksUntilQuestion = zeroKey_AttacksUntilQuestion;
 
-                // Rolling Log — insane
-                rollingLogStageSpeed = new Vector3(10f, 20f, 35f);
-                rollingLogStageCount = new Vector3Int(10, 20, 30);
-                rollingLogStageAttackSpeed = new Vector3(.1f, .2f, 0.4f);
-                //maxRollingLogAttacksPerQuestionCycle = 10;
-               // rollingLogCountReduction = 0;
-                //rollingLogAttackSpacingMultiplier = 0.7f;
+                // Rolling Log
+                rollingLogStageCount = new Vector3Int(31, 33, 35);
+                rollingLogStageSpeed = new Vector3(25.9f, 27.9f, 30f);
+                rollingLogStageAttackSpeed = new Vector3(0.51f, 0.45f, 0.4f);
+                maxRollingLogAttacksPerQuestionCycle = 3;
+                rollingLogCountReduction = 0;
+                rollingLogAttackSpacingMultiplier = 0.7f;
 
-                // Branch Strike — rapid fire
-                branchStrikeStageCount = new Vector3Int(10, 30, 50);
-                branchStrikeStageDelay = new Vector3(0.1f, 0.1f, 0.2f);
-                branchStrikeStageSpeed = new Vector3(20f, 30f, 50f);
-                branchStrikeStageDuration = new Vector3(0.4f, 0.3f, 0.2f);
-                branchStrikeStageAttackSpeed = new Vector3(0.1f, 0.1f, 0.1f);
+                // Branch Strike
+                branchStrikeStageCount = new Vector3Int(44, 47, 50);
+                branchStrikeStageDelay = new Vector3(0.43f, 0.32f, 0.2f);
+                branchStrikeStageSpeed = new Vector3(43.7f, 46.9f, 50f);
+                branchStrikeStageDuration = new Vector3(0.34f, 0.27f, 0.2f);
+                branchStrikeStageAttackSpeed = new Vector3(0.14f, 0.12f, 0.1f);
 
-                // Maple Leaf Slam — overwhelming
-                mapleLeafSlamStageCount = new Vector3Int(15, 20, 35);
-                mapleLeafSlamStageDelay = new Vector3(0.3f, 0.2f, 0.1f);
-                mapleLeafSlamStageAttackSpeed = new Vector3(.2f, .2f, .1f);
+                // Maple Leaf Slam (attack speed floor set by animation length)
+                mapleLeafSlamStageCount = new Vector3Int(31, 33, 35);
+                mapleLeafSlamStageDelay = new Vector3(0.26f, 0.18f, 0.1f);
+                mapleLeafSlamStageAttackSpeed = new Vector3(0.17f, 0.14f, 0.1f);
 
-                // Hedge Split — barely any time to answer
-                hedgeSplitStageDelay = new Vector3(1.1f, 1.2f, 1.5f);
-                hedgeSplitStageQuestionDuration = new Vector3(1.6f, 1.8f, 2f); // almost impossible
+                // Hedge Split (delay/question duration floor set by animation length)
+                hedgeSplitStageDelay = new Vector3(2.5f, 2f, 1.5f);
+                hedgeSplitStageQuestionDuration = new Vector3(2.9f, 2.5f, 2f);
 
-                // Minimal question phases — almost no damage chances
+                // Minimal question phases = almost no damage chances
                 questionPhaseCounts = new Vector3Int(1, 1, 2);
 
-                Debug.Log("Difficulty: Undefeatable (0-1 keys)");
+                Debug.Log("Boss difficulty: Undefeatable (0-1 keys)");
             }
         }
+
         private void Awake()
         {
+            int keyCount = CountKeys();
+            ApplyDifficulty(keyCount);
+
             _health = maxHealth;
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _spriteRenderer.color = stage0Color;
@@ -258,6 +276,9 @@ namespace World1BossFight
             _animator = GetComponent<Animator>();
             _audioSource = GetComponent<AudioSource>();
             _currentPhaseIndex = 0;
+
+            // Question phases depend on questionPhaseCounts, which ApplyDifficulty
+            // just set, so this must run after ApplyDifficulty.
             InitializeQuestionPhases();
         }
 
@@ -273,14 +294,13 @@ namespace World1BossFight
         {
             _boxCollider2D.enabled = false;
 
-            // Show key warning
             int keys = CountKeys();
             if (keys >= 5)
-                Debug.Log("You have all 5 keys — the boss is vulnerable!");
+                Debug.Log("You have all 5 keys - the boss is vulnerable!");
             else if (keys >= 2)
-                Debug.Log("You have " + keys + " keys — the boss will be tough!");
+                Debug.Log("You have " + keys + " keys - the boss will be tough!");
             else
-                Debug.Log("You have no keys — the boss is undefeatable!");
+                Debug.Log("You have no keys - the boss is undefeatable!");
 
             if (enableOnFightStart) enableOnFightStart.SetActive(true);
             if (disableOnFightStart) disableOnFightStart.SetActive(false);
@@ -326,10 +346,7 @@ namespace World1BossFight
                 PerformHedgeSplitAttack();
                 return;
             }
-            
-            //PerformMapleLeafSlamAttack();
-            //return;
-            
+
             var availableAttacks = new List<int> { 0, 1, 2 };
             if (_rollingLogAttacksThisCycle >= maxRollingLogAttacksPerQuestionCycle)
             {
@@ -383,7 +400,7 @@ namespace World1BossFight
                 var spawnOffset = (int)Random.Range(-rollingLogSpawnPointHeight, rollingLogSpawnPointHeight);
                 var direction = spawnLeft ? Vector3.right : Vector3.left;
                 var spawnPosition = spawnTransform.position + Vector3.up * spawnOffset;
-                
+
                 var rollingLogGameObject = Instantiate(rollingLogPrefab, spawnPosition, Quaternion.identity);
                 var rollingLog = rollingLogGameObject.GetComponent<RollingLog>();
                 rollingLog.ThrowUpAndRoll(direction, speed);
@@ -397,7 +414,7 @@ namespace World1BossFight
         {
             StartCoroutine(BranchStrikeAttackRoutine());
         }
-        
+
         private IEnumerator BranchStrikeAttackRoutine()
         {
             var count = GetStageValue(branchStrikeStageCount);
@@ -420,7 +437,7 @@ namespace World1BossFight
         {
             StartCoroutine(MapleLeafSlamAttackRoutine());
         }
-        
+
         private IEnumerator MapleLeafSlamAttackRoutine()
         {
             var count = GetStageValue(mapleLeafSlamStageCount);
@@ -441,7 +458,7 @@ namespace World1BossFight
         {
             StartCoroutine(HedgeSplitSlamAttackRoutine());
         }
-        
+
         private IEnumerator HedgeSplitSlamAttackRoutine()
         {
             var delay = GetStageValue(hedgeSplitStageDelay);
@@ -472,7 +489,7 @@ namespace World1BossFight
                 questions[i].text = question.answers[index];
                 if (index == question.correctIndex) correctIndex = i;
             }
-            
+
             yield return new WaitForSeconds(delay);
 
             questions[0].text = questions[1].text = questions[2].text = questions[3].text = string.Empty;
@@ -488,7 +505,7 @@ namespace World1BossFight
                 PerformAttack();
                 yield break;
             }
-            
+
             StartCoroutine(_health <= 0 ? DieRoutine() : ChangeStateRoutine());
         }
 
@@ -499,7 +516,7 @@ namespace World1BossFight
                 answerPositions[correctIndex].position,
                 Quaternion.identity
             );
-            
+
             var bossHeart = heart.GetComponent<BossHeart>();
             bossHeart.Damaged += BossHeartOnDamaged;
 
@@ -542,7 +559,7 @@ namespace World1BossFight
         {
             var stage = Mathf.Clamp(_currentPhaseIndex, 0, 2);
             var colorA = Color.white;
-            var colorB= Color.white;
+            var colorB = Color.white;
             switch (stage)
             {
                 case 0:
@@ -566,7 +583,7 @@ namespace World1BossFight
                 _spriteRenderer.color = Color.Lerp(colorA, colorB, timer / 3);
                 yield return null;
             }
-            
+
             PerformAttack();
         }
 

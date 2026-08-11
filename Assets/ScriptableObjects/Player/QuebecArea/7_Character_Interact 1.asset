@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72e943d679e05f3438d87615f7f2449f, type: 3}
-  m_Name: PlayerPosition
-  m_EditorClassIdentifier: 
-  initialValue: {x: -6, y: 3.5}
-  runtimeValue: {x: -6, y: 3.5}
+  m_Script: {fileID: 11500000, guid: e4f7c983118709947a681ee0f1277f47, type: 3}
+  m_Name: 7_Character_Interact 1
+  m_EditorClassIdentifier: Assembly-CSharp::BoolValue
+  initialValue: 0
+  runtimeValue: 0

@@ -1877,7 +1877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::World1BossFight.World1BossFightResultManager
   winPage: {fileID: 1512241943}
   losePage: {fileID: 1876792162}
-  winSound: {fileID: 8300000, guid: 3bdbd69523e3a714f970ebf341666ff2, type: 3}
+  winSound: {fileID: 8300000, guid: a00329ff3a5f46c458b2688bf0a87acf, type: 3}
   loseSound: {fileID: 8300000, guid: 844998c243b9036448669ded88859ae7, type: 3}
   audioSource: {fileID: 717579359}
 --- !u!4 &717579358

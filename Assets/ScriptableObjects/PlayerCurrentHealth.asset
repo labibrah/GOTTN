@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlayerCurrentHealth
   m_EditorClassIdentifier: Assembly-CSharp::FloatValue
   initialValue: 20
-  runtimeValue: 20
+  runtimeValue: 14
   maxValue: 20

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a528b3a2ad07ea54abf1f1172538739f, type: 3}
   m_Name: MaritimesQuestion
   m_EditorClassIdentifier: Assembly-CSharp::ProvinceQuestion
-  questionText: Canada's smallest and most densely populated region.
+  questionText: Canada's smallest and among its most densely populated region.
   questionImage: {fileID: 2663946884572108398, guid: 227ed2eb3bda3cb42a8e9f6e6bfe4c7c, type: 3}
   correctProvince: Maritimes
   funFact: 

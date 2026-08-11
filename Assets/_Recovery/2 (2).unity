@@ -64352,22 +64352,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -64385,53 +64369,49 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 4546d2a504cd7384982c5060328ba939, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: 'True or False: In Quebec, ice fishing can be part of winter traditions
         and community activities.'
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: 'Head down if True / Head up if False '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: 'Head down if True / Head up if False '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.28
+      value: 1.4793833
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 1.54
+      value: 1.7157502
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.24
+      value: 0.57574517
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
@@ -64848,11 +64828,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.06
+      value: 25.07
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.35
+      value: -10.59
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64887,22 +64867,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 5.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 6.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 4.82
       objectReference: {fileID: 0}
@@ -64929,37 +64893,37 @@ PrefabInstance:
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: firstInteractionDone
       value: 
-      objectReference: {fileID: 11400000, guid: 18fc72d782179ee448545645dbb9746c, type: 2}
+      objectReference: {fileID: 11400000, guid: 00f6cabd34fc53b4fb41a1cedc51716c, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: There's some weird portal thing on the other side.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: The last time I entered a portal it brought me here in Quebec.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: but you should be able to check it out
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: but you should be able to check it out
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: but you should be able to check it out
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6823835802265524105, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
@@ -64968,19 +64932,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 9.06
+      value: 9.731116
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 7.4
+      value: 7.9153533
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.9405433
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -2.68
+      value: 0.066563845
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -64996,7 +64960,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1054873654}
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 425950385}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 425950385}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!1 &376231833
 GameObject:
@@ -65559,19 +65526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: playerPosition.x
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: playerPosition.y
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
-      propertyPath: playerPosition.x
-      value: 11.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4337185287134595853, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
-      propertyPath: playerPosition.y
-      value: 4.1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
       propertyPath: m_Name
@@ -65624,7 +65583,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}, insertIndex: -1, addedObject: {fileID: 562295768}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4432837458402674273, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 562295768}
   m_SourcePrefab: {fileID: 100100000, guid: 7b9e8b0159a6761468419bd5cd0670bb, type: 3}
 --- !u!4 &562295764 stripped
 Transform:
@@ -66186,10 +66148,6 @@ PrefabInstance:
       propertyPath: footprintSystem
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1864644440394355551, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
-      propertyPath: m_PreviewTimeScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.21058238
@@ -66204,11 +66162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.57
+      value: -8.09
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.86
+      value: -18.83
       objectReference: {fileID: 0}
     - target: {fileID: 2511885089559273175, guid: 6fd006cd33205d84d9425700b88f5759, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66349,22 +66307,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 1.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -66382,56 +66324,52 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 5dcb2be1396279246ae55ac61ee37ea5, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: What is tourtiere?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Head down for 'traditional Quebec meat pie' / Head up if 'French dessert'
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Push Q
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.49
+      value: 1.580424
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 1.98
+      value: 1.5354676
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.07
+      value: 0.62626547
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.22
+      value: -0.3312893
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66797,11 +66735,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4922159312561162790, guid: 3a67c634d2a7c224a9d44f79a49b1428, type: 3}
-      propertyPath: grassTilemaps.Array.data[0]
+      propertyPath: 'grassTilemaps.Array.data[0]'
       value: 
       objectReference: {fileID: 1785934}
     - target: {fileID: 4922159312561162790, guid: 3a67c634d2a7c224a9d44f79a49b1428, type: 3}
-      propertyPath: grassTilemaps.Array.data[1]
+      propertyPath: 'grassTilemaps.Array.data[1]'
       value: 
       objectReference: {fileID: 795677344}
     m_RemovedComponents: []
@@ -75576,22 +75514,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 0.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.14
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -75609,56 +75531,52 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 01d72296a490ebf43b49f6f685cd713b, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Sorry correct answer is 'True'.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Go up to the water
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Push Q
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.19
+      value: 1.4793773
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.79
+      value: 1.5354648
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.06
+      value: 0.5757421
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.65
+      value: -0.18105602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75730,22 +75648,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 1.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 3.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 4.37
       objectReference: {fileID: 0}
@@ -75772,37 +75674,37 @@ PrefabInstance:
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: firstInteractionDone
       value: 
-      objectReference: {fileID: 11400000, guid: d139fadd434ccff459bd11385f936754, type: 2}
+      objectReference: {fileID: 11400000, guid: 453868844093ecb4aa395517d49488a1, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: I set up a fishing spot near the pond above.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Explore down then head upwards.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: 'oh! hello '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: would you like to join us and hear some storys?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: would you like to join us and hear some storys?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6823835802265524105, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
@@ -75811,19 +75713,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.2
+      value: 9.731116
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 3.81
+      value: 7.9153533
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: -1.08
+      value: -0.9405433
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: 0.75
+      value: 0.066563845
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -75839,7 +75741,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       insertIndex: -1
       addedObject: {fileID: 163700485}
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1534044109}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1534044109}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!1 &984273493
 GameObject:
@@ -76590,22 +76495,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 5.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 7.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 4.82
       objectReference: {fileID: 0}
@@ -76632,50 +76521,50 @@ PrefabInstance:
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: firstInteractionDone
       value: 
-      objectReference: {fileID: 11400000, guid: 9cd92e69b6c0fa347881907e1c0f59e8, type: 2}
+      objectReference: {fileID: 11400000, guid: a42d3fda4dae8cf42b0f0002eb1288f9, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
-      value: Ah, bienvenue! Welcome to Quebec where the coffee is strong and the winters
-        are stronger!
+      propertyPath: 'dialogs.Array.data[0]'
+      value: Ah, bienvenue! Welcome to Quebec where the coffee is strong and the
+        winters are stronger!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: "Here, you will find some of the friendliest people in Canada \u2014
         though they may greet you in French before they greet you in English!"
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Do not worry if you feel a little lost Quebec has a way of making everyone
         feel delightfully confused at first.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: "We are enjoying a warm tourti\xE8re a traditional Quebec meat pie eaten
         during the winter season."
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Head up someone will help you!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 8.92
+      value: 12.91
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 6.2
+      value: 6.83
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
@@ -76683,7 +76572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: 2.14
+      value: -1.7624235
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -76699,7 +76588,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1085309567}
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 765392634}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 765392634}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!1 &1222185770
 GameObject:
@@ -76846,22 +76738,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 1.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -76879,61 +76755,44 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 7524f65cb611ce34fb731ba52adb50d3, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: 'The sign reads: These cabins are for ice fishing ONLY!'
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Ice fishing is serious business around here, Explorer.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Do not let anyone catch you in there without a fishing rod!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1482227374}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1482227374}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!4 &1262139061 stripped
 Transform:
@@ -76998,7 +76857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -1.7028122
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.z
@@ -77032,18 +76891,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 1.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.29
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -77061,39 +76908,35 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 8d22fb8603388cb448272182dba9e160, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Sorry correct answer is 'French'.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Go up to the water
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Push Q
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
@@ -77102,15 +76945,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.74
+      value: 1.5354648
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.3
+      value: 0.5757421
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -1.01
+      value: -0.18105602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77271,8 +77114,8 @@ MonoBehaviour:
     isFinalStep: 0
   windEffectPrefab: {fileID: 5344841382174370764, guid: 2f80c33210831df4789ff90044b585b0, type: 3}
   player: {fileID: 1398441872}
-  idleSecondsBeforeWind: 10
-  cooldownAfterDismiss: 6
+  idleSecondsBeforeWind: 1
+  cooldownAfterDismiss: 1
 --- !u!4 &1317226514
 Transform:
   m_ObjectHideFlags: 0
@@ -77383,22 +77226,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 3.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 6.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 4.82
       objectReference: {fileID: 0}
@@ -77425,40 +77252,40 @@ PrefabInstance:
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: firstInteractionDone
       value: 
-      objectReference: {fileID: 11400000, guid: 14367fd4b9c84d846ba4a3b6c4fe5163, type: 2}
+      objectReference: {fileID: 11400000, guid: 8222d1175384cf148a88dc24c9d5cf65, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Ice fishing is a cherished part of Quebec's winter culture, passed down
         through generations.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Families and friends gather on frozen lakes, sharing stories, laughter,
         and the thrill of the catch.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: "These small cabins on the ice are more than just shelter \u2014 they
         are a place where community and tradition come alive."
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: 'oh! hello '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: would you like to join us and hear some storys?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6823835802265524105, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
@@ -77467,19 +77294,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 2.19
+      value: 9.731116
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 6.49
+      value: 7.9153533
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: -3.65
+      value: -0.9405433
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: 1.31
+      value: 0.066563845
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -77495,7 +77322,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1297562067}
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1333213448}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1333213448}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!1001 &1398441860
 PrefabInstance:
@@ -77774,22 +77604,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 0.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.21
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -77807,56 +77621,52 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 6d3c632f7c7e1ea42950196b6c090ded, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Sorry correct answer is 'traditional Quebec meat pie'.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Go up to the water
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Push Q
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.06
+      value: 1.4793773
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.94
+      value: 1.5354648
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.06
+      value: 0.5757421
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.56
+      value: -0.18105602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77915,22 +77725,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 1.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -77952,40 +77746,43 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 799e4f20ed16ab642b9c350383829544, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Be careful where you step, Explorer black ice is one of Canada's sneakiest
         winter hazards.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
-      value: "Unlike regular ice, black ice is nearly invisible \u2014 it blends seamlessly
-        with the road or ground beneath it."
+      propertyPath: 'dialogs.Array.data[1]'
+      value: "Unlike regular ice, black ice is nearly invisible \u2014 it blends
+        seamlessly with the road or ground beneath it."
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
-      value: One moment you are walking confidently, the next you are performing an
-        unplanned ice skating routine!
+      propertyPath: 'dialogs.Array.data[2]'
+      value: One moment you are walking confidently, the next you are performing
+        an unplanned ice skating routine!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.11
+      value: 2.523264
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.63
+      value: 2.910488
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.04724115
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.54
+      value: -0.90576446
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1813713908}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1813713908}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!4 &1492769684 stripped
 Transform:
@@ -99284,7 +99081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11
+      value: 10.073608
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99318,22 +99115,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 1.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -99351,61 +99132,60 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: ace63dda90045bb43a9cc39b041df467, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Time to fish and also test your knowledge!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: To answer the questions head either upwards or downwards.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Pay attention whether its up or down!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: If you answer correctly the path will open.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: If you answer incorrectly a sign will appear with the correct answer.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Ready?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: 'What language will you likely be greeted in first when visiting Quebec? '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: 'Head down if English / Head up if French '
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.18
+      value: 1.4793773
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.47
+      value: 1.5354648
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.02
+      value: 0.5757421
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.97
+      value: -0.18105602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1680769660}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1680769660}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!4 &1680769653 stripped
 Transform:
@@ -99532,11 +99312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.88
+      value: 18.71
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99570,22 +99350,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.16
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -99603,61 +99367,60 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 539add83d6e92fd4782435735a6a0b20, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: You can fish in these ponds!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Go up to the pond with the correct answer.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Press E.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Keep the fish in the green area by holding left click.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you win!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: If you fail, you can try again by pressing E.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.49
+      value: 1.4585567
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.42
+      value: 0.59274864
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.06
+      value: 0.08401433
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.89
+      value: -1.1820104
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1832380793}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1832380793}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!4 &1832380786 stripped
 Transform:
@@ -100516,18 +100279,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.09
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -100545,56 +100296,52 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 6f0c5b18a21793649b96ffd749152c02, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Sorry correct answer is 'Cabins'.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Go up to the water
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Push Q
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.03
+      value: 1.4793773
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.51
+      value: 1.5354648
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.05
+      value: 0.5757421
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.76
+      value: -0.18105602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -100658,7 +100405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_LocalPosition.x
@@ -100700,22 +100447,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 1.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.19
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -100733,57 +100464,53 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: 0038aa5c59b8391459d2adc54bae50bb, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Congratulations Explorer, you made it to the top!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: I must admit, I had my doubts for a moment there.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
-      value: "Now head back down \u2014 greatness awaits at the bottom, and your legs
-        could use the workout!"
+      propertyPath: 'dialogs.Array.data[2]'
+      value: "Now head back down \u2014 greatness awaits at the bottom, and your
+        legs could use the workout!"
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 0.98
+      value: 1.4793773
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 0.49
+      value: 1.5354648
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.5757421
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.89
+      value: -0.18105602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101508,22 +101235,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 1.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 1.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.17
-      objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogBox
       value: 
@@ -101541,57 +101252,53 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: firstInteractionDone
-      value: 
-      objectReference: {fileID: 11400000, guid: d84ee0dd6a01a6340829eb59511cf1ce, type: 2}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: What kind of small buildings are often seen on the ice in Quebec during
         ice fishing season?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: Head up for Cabins / Head down for Igloos
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: Kept the fish in the green area by holding and releaing left click
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: Once the bar fills up you get a reward!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: but if you fail to fill the bar you lose
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 1.45
+      value: 1.580424
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 1.9
+      value: 1.5354676
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0.07
+      value: 0.62626547
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -0.21
+      value: -0.3312893
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101622,18 +101329,6 @@ PrefabInstance:
     - target: {fileID: 4907291144626464245, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5377950608943410850, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
-      propertyPath: m_Size.x
-      value: 1.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 5377950608943410850, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
-      propertyPath: m_Size.y
-      value: 0.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 5377950608943410850, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.71
       objectReference: {fileID: 0}
     - target: {fileID: 6776920915619317865, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -102071,22 +101766,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.x
-      value: 6.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Size.y
-      value: 6.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5078555104730874548, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 4.82
       objectReference: {fileID: 0}
@@ -102113,38 +101792,38 @@ PrefabInstance:
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: firstInteractionDone
       value: 
-      objectReference: {fileID: 11400000, guid: e7e240249ab5f674d91624c396a5e88a, type: 2}
+      objectReference: {fileID: 11400000, guid: e23bb21ef4fb5864292c672faf036397, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[0]
+      propertyPath: 'dialogs.Array.data[0]'
       value: Where did I put that drill?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[1]
+      propertyPath: 'dialogs.Array.data[1]'
       value: How am I going to make a hole now and catch a trout!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[2]
+      propertyPath: 'dialogs.Array.data[2]'
       value: any people in Quebec use small fishing cabins on the ice, which makes
         the experience both practical and cultural.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[3]
+      propertyPath: 'dialogs.Array.data[3]'
       value: 'oh! hello '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[4]
+      propertyPath: 'dialogs.Array.data[4]'
       value: would you like to join us and hear some storys?
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[5]
+      propertyPath: 'dialogs.Array.data[5]'
       value: Don't worry you can try again but pushing Q again
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[6]
+      propertyPath: 'dialogs.Array.data[6]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: dialogs.Array.data[7]
+      propertyPath: 'dialogs.Array.data[7]'
       value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6823835802265524105, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
@@ -102153,19 +101832,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.x
-      value: 10.39
+      value: 9.731116
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Size.y
-      value: 5.9
+      value: 7.9153533
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.9405433
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_Offset.y
-      value: -2.57
+      value: 0.066563845
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -102181,7 +101860,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2514801283285460712, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       insertIndex: -1
       addedObject: {fileID: 394261948}
-    m_AddedComponents: [{targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}, insertIndex: -1, addedObject: {fileID: 1967678066}}]
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1967678066}
   m_SourcePrefab: {fileID: 100100000, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
 --- !u!1 &2142789601
 GameObject:

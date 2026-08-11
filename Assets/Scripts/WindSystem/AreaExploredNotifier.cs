@@ -9,6 +9,7 @@ public class AreaExploredNotifier : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !collision.isTrigger)
         {
+            Debug.Log($"[Notifier] Marking explored: {targetFlag.name}, current value before = {targetFlag.runtimeValue}");
             controller.MarkExplored(targetFlag);
         }
     }

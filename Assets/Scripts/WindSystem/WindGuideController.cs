@@ -30,8 +30,10 @@ public class WindGuideController : MonoBehaviour
     private WindGuideStep GetNextStep()
     {
         foreach (var s in steps)
+        {
+            Debug.Log($"[WindGuide] {s.stepName}: explored={s.exploredFlag.runtimeValue}");
             if (!s.isFinalStep && !s.exploredFlag.runtimeValue) return s;
-
+        }
         foreach (var s in steps)
             if (s.isFinalStep && !s.exploredFlag.runtimeValue) return s;
 

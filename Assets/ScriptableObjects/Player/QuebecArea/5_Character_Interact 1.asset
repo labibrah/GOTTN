@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 5_Character_Interact 1
   m_EditorClassIdentifier: Assembly-CSharp::BoolValue
   initialValue: 0
-  runtimeValue: 1
+  runtimeValue: 0

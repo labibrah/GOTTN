@@ -43,13 +43,21 @@ public class BagManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             ToggleBag();
-            petBubble.playerHasOpenedBag = true;
+            if (petBubble != null)
+            {
+                petBubble.playerHasOpenedBag = true;
+
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseBag();
-            petBubble.playerHasOpenedBag = true;
+            if (petBubble != null)
+            {
+                petBubble.playerHasOpenedBag = true;
+
+            }
         }
     }
 

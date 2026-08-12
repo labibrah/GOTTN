@@ -10,11 +10,21 @@ public class CanadaGeoGame : MonoBehaviour
     public Inventory playerInventory;
     public Item winningItem;
 
+    [Header("Colors")]
+    public Color correctColor = new Color(0.13f, 0.5f, 0.13f);
+
+    [Header("Scoring")]
+    [Tooltip("Points awarded for each correct answer.")]
+    public int pointsPerCorrectAnswer = 1000;
+
+    private int currentIndex = 0;
+    private int score = 0;
+    private bool canAnswer = true;
+
     [Header("UI")]
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI feedbackText;
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI timerText;
     public Image questionImage;
     public GameObject resultPanel;
     public TextMeshProUGUI resultText;
@@ -39,14 +49,6 @@ public class CanadaGeoGame : MonoBehaviour
     [Header("Questions")]
     public List<ProvinceQuestion> questions;
 
-    [Header("Settings")]
-    public float timePerQuestion = 20f;
-
-    private int currentIndex = 0;
-    private int score = 0;
-    private float timer;
-    private bool canAnswer = true;
-
     void Start()
     {
         // Start background music
@@ -61,15 +63,10 @@ public class CanadaGeoGame : MonoBehaviour
         LoadQuestion();
     }
 
+    // No timer to tick anymore, so Update() has nothing to do per-frame.
+    // Left in place in case you need it later; safe to delete otherwise.
     void Update()
     {
-        if (!canAnswer) return;
-
-        timer -= Time.deltaTime;
-        timerText.text = "Time Left: " + Mathf.CeilToInt(timer);
-
-        if (timer <= 0)
-            StartCoroutine(HandleAnswer(false, "Time's up!"));
     }
 
     void ShuffleQuestions()
@@ -92,7 +89,6 @@ public class CanadaGeoGame : MonoBehaviour
         }
 
         canAnswer = true;
-        timer = timePerQuestion;
         feedbackText.text = "";
         ResetAllHighlights();
 
@@ -111,21 +107,21 @@ public class CanadaGeoGame : MonoBehaviour
     }
 
     public void OnProvinceClicked(string provinceName)
-{
-    Debug.Log("OnProvinceClicked called with: " + provinceName);
-    Debug.Log("canAnswer: " + canAnswer);
-    Debug.Log("questions count: " + questions.Count);
+    {
+        Debug.Log("OnProvinceClicked called with: " + provinceName);
+        Debug.Log("canAnswer: " + canAnswer);
+        Debug.Log("questions count: " + questions.Count);
 
-    if (!canAnswer) return;
+        if (!canAnswer) return;
 
-    ProvinceQuestion q = questions[currentIndex];
-    Debug.Log("Correct province: " + q.correctProvince);
+        ProvinceQuestion q = questions[currentIndex];
+        Debug.Log("Correct province: " + q.correctProvince);
 
-    bool isCorrect = provinceName == q.correctProvince;
-    Debug.Log("isCorrect: " + isCorrect);
+        bool isCorrect = provinceName == q.correctProvince;
+        Debug.Log("isCorrect: " + isCorrect);
 
-    StartCoroutine(HandleAnswer(isCorrect, q.funFact));
-}
+        StartCoroutine(HandleAnswer(isCorrect, q.funFact));
+    }
 
     private IEnumerator HandleAnswer(bool correct, string fact)
     {
@@ -136,11 +132,10 @@ public class CanadaGeoGame : MonoBehaviour
         {
             if (sfxSource != null && correctSound != null)
                 sfxSource.PlayOneShot(correctSound);
-            int points = Mathf.RoundToInt(timer * 100);
-            score += points;
-            feedbackText.text = "Correct! +" + points + " points\n" + fact;
-            feedbackText.color = Color.green;
-            HighlightRegion(q.correctProvince, Color.green);
+            score += pointsPerCorrectAnswer;
+            feedbackText.text = "Correct! +" + pointsPerCorrectAnswer + " points\n" + fact;
+            feedbackText.color = correctColor;
+            HighlightRegion(q.correctProvince, correctColor);
         }
         else
         {
@@ -148,7 +143,7 @@ public class CanadaGeoGame : MonoBehaviour
                 sfxSource.PlayOneShot(wrongSound);
             feedbackText.text = "Wrong! It was " + q.correctProvince + "\n" + fact;
             feedbackText.color = Color.red;
-            HighlightRegion(q.correctProvince, Color.green); // show correct
+            HighlightRegion(q.correctProvince, correctColor); // show correct
         }
 
         scoreText.text = "Score: " + score;
@@ -197,7 +192,6 @@ public class CanadaGeoGame : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-
     public void ReturnToMainWorld()
     {
         SceneTracker.Instance.ReturnToPreviousScene(true);
@@ -207,21 +201,27 @@ public class CanadaGeoGame : MonoBehaviour
     {
         resultPanel.SetActive(true);
         resultText.text = "Final Score: " + score;
-        if (score > 10000)
+
+        int maxPossibleScore = questions.Count * pointsPerCorrectAnswer;
+        bool perfectScore = score >= maxPossibleScore;
+
+        if (perfectScore)
         {
             if (winningItem != null)
             {
                 playerInventory.AddItem(winningItem);
             }
-        }  
-        ratingText.text = GetRating();
+        }
+        ratingText.text = GetRating(perfectScore);
     }
 
-    string GetRating()
+    string GetRating(bool perfectScore)
     {
-        if (score > 10000) return "True Canadian! You get a reward key";
-        if (score > 6000) return "Pretty good, eh!";
-        if (score > 3000) return "Keep exploring Canada!";
+        if (perfectScore) return "True Canadian! You get a reward key";
+
+        float percentCorrect = (float)score / (questions.Count * pointsPerCorrectAnswer);
+        if (percentCorrect >= 0.6f) return "Pretty good, eh!";
+        if (percentCorrect >= 0.3f) return "Keep exploring Canada!";
         return "Time to study the map!";
     }
 }

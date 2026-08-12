@@ -17,6 +17,14 @@ public class WestCoastQuiz : Interactable
     public bool dialogActive;
     public int currentDialogIndex = 0;
 
+    // --- Continue indicator (animated dots) ---
+    public GameObject ContinueIndicator;
+    private TMP_Text continueDotsLabel;
+    private float dotTimer = 0f;
+    [SerializeField] private float dotInterval = 0.4f;
+    [SerializeField] private int maxDots = 3;
+    private int dotCount = 0;
+
     public override void Start()
     {
         if (audioSource == null)
@@ -31,6 +39,10 @@ public class WestCoastQuiz : Interactable
         {
             dialogText = dialogBox.GetComponentInChildren<TextMeshProUGUI>();
         }
+        if (ContinueIndicator != null)
+        {
+            continueDotsLabel = ContinueIndicator.GetComponentInChildren<TMP_Text>();
+        }
         if (firstInteractionDone.runtimeValue == true)
         {
             if (flashingAnimator != null)
@@ -38,19 +50,21 @@ public class WestCoastQuiz : Interactable
                 flashingAnimator.SetBool("isFlashing", false);
             }
         }
-        
+
     }
 
     public virtual void Update()
     {
-        if(dialogActive && Input.GetKeyDown(KeyCode.E) && firstInteractionDone.runtimeValue == true)
+        UpdateContinueIndicator();
+
+        if (dialogActive && Input.GetKeyDown(KeyCode.E) && firstInteractionDone.runtimeValue == true)
         {
             if (LonghouseGreeter.Instance != null && LonghouseGreeter.Instance.CanInteract())
             {
                 TriggerQuiz();
                 dialogActive = false;
             }
-           else
+            else
             {
                 if (!dialogBox.activeSelf)
                 {
@@ -62,7 +76,7 @@ public class WestCoastQuiz : Interactable
                     dialogBox.SetActive(false);
                 }
             }
-        }        
+        }
         else if (dialogActive && Input.GetKeyDown(KeyCode.E))
         {
             if (audioSource != null && interactSound != null)
@@ -110,6 +124,31 @@ public class WestCoastQuiz : Interactable
             dialogBox.SetActive(false);
             dialogActive = false;
             currentDialogIndex = 0;
+        }
+    }
+
+    private void UpdateContinueIndicator()
+    {
+        if (ContinueIndicator == null || continueDotsLabel == null) return;
+
+        bool hasMoreText = dialogActive && dialogBox.activeSelf && currentDialogIndex < dialogs.Length - 1;
+
+        ContinueIndicator.SetActive(hasMoreText);
+
+        if (hasMoreText)
+        {
+            dotTimer += Time.deltaTime;
+            if (dotTimer >= dotInterval)
+            {
+                dotTimer = 0f;
+                dotCount = (dotCount + 1) % (maxDots + 1);
+                continueDotsLabel.text = new string('.', dotCount).PadRight(maxDots);
+            }
+        }
+        else
+        {
+            dotTimer = 0f;
+            dotCount = 0;
         }
     }
 

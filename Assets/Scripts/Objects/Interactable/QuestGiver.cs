@@ -15,6 +15,14 @@ public class QuestGiver : Interactable
     public Signal checkQuestCompletion;
     public Signal questComplete;
 
+    // --- Continue indicator (animated dots) ---
+    public GameObject ContinueIndicator;
+    private TMP_Text continueDotsLabel;
+    private float dotTimer = 0f;
+    [SerializeField] private float dotInterval = 0.4f;
+    [SerializeField] private int maxDots = 3;
+    private int dotCount = 0;
+
     private string[] currentDialogue;
     private bool isQuestDone = false;
     private bool questGiven = false;
@@ -34,6 +42,10 @@ public class QuestGiver : Interactable
         {
             dialogText = dialogBox.GetComponentInChildren<TextMeshProUGUI>();
         }
+        if (ContinueIndicator != null)
+        {
+            continueDotsLabel = ContinueIndicator.GetComponentInChildren<TMP_Text>();
+        }
         if (firstInteractionDone.runtimeValue == true)
         {
             if (flashingAnimator != null)
@@ -48,6 +60,8 @@ public class QuestGiver : Interactable
     }
     public virtual void Update()
     {
+        UpdateContinueIndicator();
+
         if (dialogActive && Input.GetKeyDown(KeyCode.E))
         {
             TriggerDialogue();
@@ -72,9 +86,36 @@ public class QuestGiver : Interactable
         }
     }
 
+    private void UpdateContinueIndicator()
+    {
+        if (ContinueIndicator == null || continueDotsLabel == null) return;
+
+        bool hasMoreText = dialogActive && dialogBox.activeSelf
+            && currentDialogue != null
+            && currentDialogIndex < currentDialogue.Length - 1;
+
+        ContinueIndicator.SetActive(hasMoreText);
+
+        if (hasMoreText)
+        {
+            dotTimer += Time.deltaTime;
+            if (dotTimer >= dotInterval)
+            {
+                dotTimer = 0f;
+                dotCount = (dotCount + 1) % (maxDots + 1);
+                continueDotsLabel.text = new string('.', dotCount).PadRight(maxDots);
+            }
+        }
+        else
+        {
+            dotTimer = 0f;
+            dotCount = 0;
+        }
+    }
+
     public virtual void TriggerDialogue()
     {
-        if(currentDialogIndex == 0)
+        if (currentDialogIndex == 0)
         {
             if (questGiven)
             {
@@ -83,7 +124,7 @@ public class QuestGiver : Interactable
                     StartCoroutine(WaitForCheck());
                 }
 
-            
+
                 if (!isQuestDone)
                 {
                     currentDialogue = dialogueQuestIncomplete;
@@ -92,7 +133,8 @@ public class QuestGiver : Interactable
                 {
                     currentDialogue = dialogueQuestComplete;
                 }
-            } else
+            }
+            else
             {
                 currentDialogue = introDialogue;
             }
@@ -179,4 +221,3 @@ public class QuestGiver : Interactable
         isChecking = answer;
     }
 }
-

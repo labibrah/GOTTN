@@ -5,6 +5,7 @@ public class Sign : Interactable
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
     public string[] dialogs;
+    public GameObject ContinueIndicator;
     public bool dialogActive;
     public int currentDialogIndex = 0;
     public PetBubble petBubble;
@@ -29,6 +30,17 @@ public class Sign : Interactable
 
         base.Start();
     }
+
+    private void UpdateContinueIndicator()
+    {
+        Debug.Log($"[{gameObject.name}] UpdateContinueIndicator called. currentDialogIndex={currentDialogIndex}, dialogs.Length={dialogs.Length}, ContinueIndicator null? {ContinueIndicator == null}");
+        if (ContinueIndicator == null) return;
+
+        bool hasMoreText = currentDialogIndex < dialogs.Length - 1;
+        Debug.Log($"[{gameObject.name}] Setting ContinueIndicator (InstanceID={ContinueIndicator.GetInstanceID()}) active={hasMoreText}");
+        ContinueIndicator.SetActive(hasMoreText);
+        Debug.Log($"[{gameObject.name}] ContinueIndicator.activeSelf is now: {ContinueIndicator.activeSelf}");
+    }
     public virtual void Update()
     {
         if (playerInRange && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)))
@@ -37,6 +49,8 @@ public class Sign : Interactable
                 audioSource.PlayOneShot(interactSound);
             if (!dialogBox.activeSelf)
             {
+                dialogText.text = dialogs.Length > 0 ? dialogs[currentDialogIndex] : "";
+                UpdateContinueIndicator();
                 if (petBubble != null)
                 {
                     petBubble.playerHasInteracted = true;
@@ -59,6 +73,7 @@ public class Sign : Interactable
                 if (currentDialogIndex < dialogs.Length)
                 {
                     dialogText.text = dialogs[currentDialogIndex];
+                    UpdateContinueIndicator();
                 }
                 else
                 {

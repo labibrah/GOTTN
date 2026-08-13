@@ -11880,48 +11880,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
-      value: Hi Explorer,come back here for a quick refresher on the controls!
+      value: If you are unsure of where to go next, follow the purple magic trail.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
-      value: Press E to interact with signs and objects.
+      value: 'A quick refresher on the controls:'
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[2]'
-      value: Leftt-click mouse to break objects.
+      value: Press E to interact with signs and objects.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[3]'
-      value: Press B to access your backpack with items you collect.
+      value: Press E to break objects.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[4]'
+      value: Press B to access your backpack with items you collect.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      propertyPath: 'dialogs.Array.data[5]'
       value: To win the game, you will have to explore the main area here and three
         other regions connected to this area.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: 'dialogs.Array.data[5]'
+      propertyPath: 'dialogs.Array.data[6]'
       value: 'On the left you will find West Coast Canada. '
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: 'dialogs.Array.data[6]'
+      propertyPath: 'dialogs.Array.data[7]'
       value: On the right you will find the Prairie Provinces.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: 'dialogs.Array.data[7]'
+      propertyPath: 'dialogs.Array.data[8]'
       value: On the right you will also find the French speaking Quebec area.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
-      propertyPath: 'dialogs.Array.data[8]'
-      value: Win at least two keys or crystal ball from the minigame in the regions
-        to start boss fight.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[9]'
-      value: Beat the boss and win the game!
+      value: Gather at least two keys to defeat the evil tree and win.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[10]'
+      value: Let's go!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      propertyPath: 'dialogs.Array.data[11]'
       value: Let's go!
       objectReference: {fileID: 0}
     - target: {fileID: 7335428159206204728, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}

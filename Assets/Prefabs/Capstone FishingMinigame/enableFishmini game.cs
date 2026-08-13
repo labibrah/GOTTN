@@ -31,6 +31,7 @@ public class EnableFishMiniGame : MonoBehaviour
     {
         if (fishingSpot == null || fishingMiniGame == null || miniGame == null)
             return;
+        if (FishingMiniGame.IsFishing) return;
 
         if (fishingSpot.playerInZone && Input.GetKeyDown(KeyCode.E))
         {

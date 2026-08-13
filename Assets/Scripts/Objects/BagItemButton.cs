@@ -7,7 +7,7 @@ public class BagItemButton : MonoBehaviour
     public TextMeshProUGUI QuantityText;
 
     [Tooltip("Multiplier applied to the icon's default size when populating the bag.")]
-    public float iconScale = 3f;
+    public float iconScale = 1.2f;
 
     public void Setup(Item newItem, BagManager manager, int quantity = 1)
     {

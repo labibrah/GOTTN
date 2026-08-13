@@ -82,6 +82,9 @@ namespace World1BossFight
         [Header("Key System")]
         [SerializeField] private Inventory inventory;
 
+        [SerializeField] private FireEffectController[] bridgeFireEffects;
+        [SerializeField] private float fireFadeOutDuration = 2f;
+
         // ---------------------------------------------------------------
         // Difficulty tiers, driven by how many of the 5 keys the player
         // has collected:
@@ -306,6 +309,12 @@ namespace World1BossFight
             if (disableOnFightStart) disableOnFightStart.SetActive(false);
             yield return new WaitForSeconds(1);
             bridgeAnimator.SetTrigger("Break");
+
+            foreach (var fire in bridgeFireEffects)
+            {
+                if (fire != null) fire.FadeOut(fireFadeOutDuration);
+            }
+
             StartCoroutine(ChangeStateRoutine());
             yield return new WaitForSeconds(3);
             _animator.SetTrigger("Idle");

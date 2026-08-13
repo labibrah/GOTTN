@@ -126168,6 +126168,79 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7769912553649625230, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
   m_PrefabInstance: {fileID: 1557676179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &461063983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461063985}
+  - component: {fileID: 461063984}
+  m_Layer: 0
+  m_Name: WindGuideManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &461063984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461063983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052dfb7974e73e44abae943f26c5fa6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindGuideController
+  steps:
+  - stepName: 
+    targetPoint: {fileID: 2514801283375492593}
+    exploredFlag: {fileID: 11400000, guid: 37a268b1b050cbb4183b2dff63f97fd8, type: 2}
+    isFinalStep: 0
+  - stepName: 
+    targetPoint: {fileID: 2514801282259724406}
+    exploredFlag: {fileID: 11400000, guid: 68d90b778878a0b469c48b2b4ba7e073, type: 2}
+    isFinalStep: 0
+  - stepName: 
+    targetPoint: {fileID: 2514801281873465535}
+    exploredFlag: {fileID: 11400000, guid: f22829c65b3fb0848b6e046294590f74, type: 2}
+    isFinalStep: 0
+  - stepName: 
+    targetPoint: {fileID: 2514801282497553202}
+    exploredFlag: {fileID: 11400000, guid: c0ed696b1220de544ae18b6eff44132e, type: 2}
+    isFinalStep: 0
+  - stepName: 
+    targetPoint: {fileID: 2514801282841857871}
+    exploredFlag: {fileID: 11400000, guid: cee7bc06c35aa2948a0abf3b1d881b32, type: 2}
+    isFinalStep: 0
+  - stepName: 
+    targetPoint: {fileID: 2514801283058791009}
+    exploredFlag: {fileID: 11400000, guid: b1d4e3b008b94f44da8462f3fcb59828, type: 2}
+    isFinalStep: 0
+  windEffectPrefab: {fileID: 5344841382174370764, guid: 2f80c33210831df4789ff90044b585b0, type: 3}
+  player: {fileID: 909448234}
+  idleSecondsBeforeWind: 1
+  cooldownAfterDismiss: 2
+--- !u!4 &461063985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461063983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &489951884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159993,6 +160066,7 @@ GameObject:
   - component: {fileID: 198308507}
   - component: {fileID: 6823835802895679022}
   - component: {fileID: 4601502502531987039}
+  - component: {fileID: 7335428159635147936}
   m_Layer: 0
   m_Name: TownNPC1
   m_TagString: Untagged
@@ -160016,6 +160090,7 @@ GameObject:
   - component: {fileID: 6823835803055723091}
   - component: {fileID: 4601502502456105506}
   - component: {fileID: 690758616}
+  - component: {fileID: 7335428160029827299}
   m_Layer: 0
   m_Name: TownNPC2
   m_TagString: Untagged
@@ -160039,6 +160114,7 @@ GameObject:
   - component: {fileID: 6823835802356079760}
   - component: {fileID: 4601502501991863521}
   - component: {fileID: 834625401}
+  - component: {fileID: 7335428159095303714}
   m_Layer: 0
   m_Name: FarmNPC1
   m_TagString: Untagged
@@ -160062,6 +160138,7 @@ GameObject:
   - component: {fileID: 6823835802408469248}
   - component: {fileID: 4601502501943593841}
   - component: {fileID: 1991478511}
+  - component: {fileID: 7335428159583908274}
   m_Layer: 0
   m_Name: Station Master
   m_TagString: Untagged
@@ -160085,6 +160162,7 @@ GameObject:
   - component: {fileID: 6823835803942117854}
   - component: {fileID: 4601502501563460015}
   - component: {fileID: 1024487244}
+  - component: {fileID: 7335428158600827760}
   m_Layer: 0
   m_Name: Farmer
   m_TagString: Untagged
@@ -160108,6 +160186,7 @@ GameObject:
   - component: {fileID: 6823835803220023575}
   - component: {fileID: 4601502501144400230}
   - component: {fileID: 2043013389}
+  - component: {fileID: 7335428158248102823}
   m_Layer: 0
   m_Name: FarmNPC2
   m_TagString: Untagged
@@ -161586,6 +161665,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3783374, y: 1.4753723}
   m_EdgeRadius: 0
+--- !u!114 &7335428158248102823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300872501064444791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: 68d90b778878a0b469c48b2b4ba7e073, type: 2}
+  controller: {fileID: 461063984}
 --- !u!61 &7335428158600827759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161632,6 +161725,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3783374, y: 1.4753723}
   m_EdgeRadius: 0
+--- !u!114 &7335428158600827760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300872500611077054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: f22829c65b3fb0848b6e046294590f74, type: 2}
+  controller: {fileID: 461063984}
 --- !u!61 &7335428159095303713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161678,6 +161785,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3783374, y: 1.4753723}
   m_EdgeRadius: 0
+--- !u!114 &7335428159095303714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300872500183723760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: 37a268b1b050cbb4183b2dff63f97fd8, type: 2}
+  controller: {fileID: 461063984}
 --- !u!61 &7335428159583908273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161724,6 +161845,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3783374, y: 1.4753723}
   m_EdgeRadius: 0
+--- !u!114 &7335428159583908274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300872500265546080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: b1d4e3b008b94f44da8462f3fcb59828, type: 2}
+  controller: {fileID: 461063984}
 --- !u!61 &7335428159635147935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161770,6 +161905,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3783374, y: 1.4753723}
   m_EdgeRadius: 0
+--- !u!114 &7335428159635147936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300872499645959246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: cee7bc06c35aa2948a0abf3b1d881b32, type: 2}
+  controller: {fileID: 461063984}
 --- !u!61 &7335428160029827298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161816,6 +161965,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3783374, y: 1.4753723}
   m_EdgeRadius: 0
+--- !u!114 &7335428160029827299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2300872499754573875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: c0ed696b1220de544ae18b6eff44132e, type: 2}
+  controller: {fileID: 461063984}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -161840,3 +162003,4 @@ SceneRoots:
   - {fileID: 1370337504}
   - {fileID: 885592665}
   - {fileID: 644409214}
+  - {fileID: 461063985}

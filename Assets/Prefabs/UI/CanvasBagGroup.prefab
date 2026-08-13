@@ -624,7 +624,7 @@ RectTransform:
   m_GameObject: {fileID: 2201761852411461060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.51387, y: 0.51387, z: 0.51387}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1863805851404163765}
@@ -632,7 +632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 176.11, y: 76.8671}
+  m_AnchoredPosition: {x: 148, y: 950}
   m_SizeDelta: {x: 341.95, y: 135.6482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3380074253449884708
@@ -3198,19 +3198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagUIPanel: {fileID: 7834110421014453960}
-  itemDetailsPanel: {fileID: 3258058242366406301}
   itemGridParent: {fileID: 4179476622513829316}
   itemButtonPrefab: {fileID: 6773988219970721571, guid: de674d80de663384f87d635b1c023ee6, type: 3}
-  MeatPrefab: {fileID: 2481007013310414359, guid: 2e9de69347a0cfc4e85d5bbc4f10e19a, type: 3}
-  CarrotPrefab: {fileID: 2481007013310414359, guid: 3d6d2f45a13876f4eb096b9c1b087619, type: 3}
-  coinPrefab: {fileID: 4279882350371410133, guid: 458a71df944303f439984601cc275e38, type: 3}
-  detailImage: {fileID: 3425227684418221175}
-  detailName: {fileID: 6887882946721476299}
-  detailDescription: {fileID: 4330079877398669164}
-  useButton: {fileID: 4844700625871522639}
-  sellButton: {fileID: 5460772229625247848}
   closeButton: {fileID: 8246170520758240932}
-  closeDetailsButton: {fileID: 5438498226051088925}
   CoinSignal: {fileID: 11400000, guid: 52c3ffd95dd325547ab78d7caa525623, type: 2}
   playerInventory: {fileID: 11400000, guid: 4e0ae81afb7d6104a829e015cbb29259, type: 2}
   petBubble: {fileID: 0}

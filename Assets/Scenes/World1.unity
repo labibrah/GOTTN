@@ -542,7 +542,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 19ee79ae6541aba4ca0f0a45c0f64d89, type: 3}
   interactSignal: {fileID: 11400000, guid: df844c6a50c328e46a83e54b550dcc1b, type: 2}
-  firstInteractionDone: {fileID: 11400000, guid: 4aaf1575c4d765942a51dd3df8265de5, type: 2}
+  firstInteractionDone: {fileID: 11400000, guid: 6e6216c7d8c6f044abc0a2f1a1e4e930, type: 2}
   flashingAnimator: {fileID: 37222229}
   dialogBox: {fileID: 234393395}
   dialogText: {fileID: 1751616009}
@@ -9205,7 +9205,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 19ee79ae6541aba4ca0f0a45c0f64d89, type: 3}
   interactSignal: {fileID: 11400000, guid: df844c6a50c328e46a83e54b550dcc1b, type: 2}
-  firstInteractionDone: {fileID: 11400000, guid: 4aaf1575c4d765942a51dd3df8265de5, type: 2}
+  firstInteractionDone: {fileID: 11400000, guid: efcd1ae92b10e9b469d04ea8486da2e6, type: 2}
   flashingAnimator: {fileID: 731929478}
   dialogBox: {fileID: 234393395}
   dialogText: {fileID: 1751616009}
@@ -10458,7 +10458,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 19ee79ae6541aba4ca0f0a45c0f64d89, type: 3}
   interactSignal: {fileID: 11400000, guid: df844c6a50c328e46a83e54b550dcc1b, type: 2}
-  firstInteractionDone: {fileID: 11400000, guid: 4aaf1575c4d765942a51dd3df8265de5, type: 2}
+  firstInteractionDone: {fileID: 11400000, guid: f6555c5039c09c843b68b1fc63ea276c, type: 2}
   flashingAnimator: {fileID: 895848899}
   dialogBox: {fileID: 234393395}
   dialogText: {fileID: 1751616009}
@@ -11878,6 +11878,10 @@ PrefabInstance:
       propertyPath: dialogs.Array.size
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
+      propertyPath: firstInteractionDone
+      value: 
+      objectReference: {fileID: 11400000, guid: f80475fc226021e4b8189129af541580, type: 2}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
       value: If you are unsure of where to go next, follow the purple magic trail.
@@ -119487,7 +119491,7 @@ Tilemap:
       - {fileID: -273339704, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 1675244561, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 694308033, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -8, y: -34, z: 0}
@@ -119737,7 +119741,7 @@ Tilemap:
       - {fileID: -1157881624, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: -1142733404, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
       - {fileID: 1995467650, guid: 3410493949279124ca64cf4e3ad273ba, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -11, y: -30, z: 0}
@@ -120419,7 +120423,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 19ee79ae6541aba4ca0f0a45c0f64d89, type: 3}
   interactSignal: {fileID: 11400000, guid: df844c6a50c328e46a83e54b550dcc1b, type: 2}
-  firstInteractionDone: {fileID: 11400000, guid: 4aaf1575c4d765942a51dd3df8265de5, type: 2}
+  firstInteractionDone: {fileID: 11400000, guid: 8c3630626e8e15040be64faba96baebb, type: 2}
   flashingAnimator: {fileID: 1554039881}
   dialogBox: {fileID: 234393395}
   dialogText: {fileID: 1751616009}
@@ -161477,7 +161481,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   interactSound: {fileID: 8300000, guid: 19ee79ae6541aba4ca0f0a45c0f64d89, type: 3}
   interactSignal: {fileID: 11400000, guid: df844c6a50c328e46a83e54b550dcc1b, type: 2}
-  firstInteractionDone: {fileID: 11400000, guid: 4aaf1575c4d765942a51dd3df8265de5, type: 2}
+  firstInteractionDone: {fileID: 11400000, guid: b9cfbbb495ae14d49b955e439dda503e, type: 2}
   flashingAnimator: {fileID: 1736850219}
   dialogBox: {fileID: 234393395}
   dialogText: {fileID: 1751616009}

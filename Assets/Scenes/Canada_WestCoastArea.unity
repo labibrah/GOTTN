@@ -175115,6 +175115,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2864370782280579095, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1653.0867
+      objectReference: {fileID: 0}
+    - target: {fileID: 2864370782280579095, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -39.59983
+      objectReference: {fileID: 0}
     - target: {fileID: 3244232736934444002, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_Name
       value: CanvasBagGroup
@@ -175293,7 +175301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7769912553649625230, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.x

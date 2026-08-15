@@ -20887,7 +20887,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 4b43fb77c2f463545a98fcdccc35638f, type: 2}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: startMessages.Array.size
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[0]'
@@ -20899,40 +20899,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[2]'
-      value: Here, you will discover new language skills
+      value: You will embark on a journey filled with adventure and learning.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[3]'
-      value: and embark on a journey filled with adventure and learning.
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[4]'
       value: I am your guiding spirit, and I will be with you every step of the way.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[5]'
+      propertyPath: 'startMessages.Array.data[4]'
       value: An evil mystic tree has been haunting Canada, you will need to defeat
         it.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[6]'
+      propertyPath: 'startMessages.Array.data[5]'
       value: To do so you will need to collect keys by solving quizzes and puzzles.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[7]'
+      propertyPath: 'startMessages.Array.data[6]'
       value: With each key you get the tree becomes weaker.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[8]'
+      propertyPath: 'startMessages.Array.data[7]'
       value: I would advice you to collect all of the 5 keys available.
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[9]'
+      propertyPath: 'startMessages.Array.data[8]'
       value: Read the signs on the map, they might contain important information!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
-      propertyPath: 'startMessages.Array.data[10]'
+      propertyPath: 'startMessages.Array.data[9]'
       value: Interact with all the glowing objects in this room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
+      propertyPath: 'startMessages.Array.data[10]'
+      value: Then finish the quiz to get a key and explore further. Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 8354995504025756402, guid: 2c81843eef9bd4f40bf939326e4acf49, type: 3}
       propertyPath: 'startMessages.Array.data[11]'

@@ -696,7 +696,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1557370447
+--- !u!1 &934882631
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -704,8 +704,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1557370449}
-  - component: {fileID: 1557370448}
+  - component: {fileID: 934882633}
+  - component: {fileID: 934882632}
   m_Layer: 0
   m_Name: AnalyticsManager
   m_TagString: Untagged
@@ -713,27 +713,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1557370448
+--- !u!114 &934882632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557370447}
+  m_GameObject: {fileID: 934882631}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e27dc43986f3be94b83100c8dbb1f417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnalyticsLogger
-  participantId: test0011
+  participantId: p01
   outputFolder: AnalyticsLogs
---- !u!4 &1557370449
+--- !u!4 &934882633
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557370447}
+  m_GameObject: {fileID: 934882631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -794,5 +794,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 462503847}
-  - {fileID: 1557370449}
   - {fileID: 1980845126}
+  - {fileID: 934882633}

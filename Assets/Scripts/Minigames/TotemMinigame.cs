@@ -67,4 +67,10 @@ public class TotemMinigame : MonoBehaviour
         MiddlePiece.transform.position = MiddlePieceSpot.transform.position;
         BottomPiece.transform.position = BottomPieceSpot.transform.position;
     }
+
+    void OnDestroy()
+    {
+        if (totemQuest != null && checkCorrect != null)
+            totemQuest.questComplete.UnregisterListener(checkCorrect);
+    }
 }

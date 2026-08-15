@@ -126224,8 +126224,8 @@ MonoBehaviour:
     isFinalStep: 0
   windEffectPrefab: {fileID: 5344841382174370764, guid: 2f80c33210831df4789ff90044b585b0, type: 3}
   player: {fileID: 909448234}
-  idleSecondsBeforeWind: 1
-  cooldownAfterDismiss: 2
+  idleSecondsBeforeWind: 6
+  cooldownAfterDismiss: 10
 --- !u!4 &461063985
 Transform:
   m_ObjectHideFlags: 0

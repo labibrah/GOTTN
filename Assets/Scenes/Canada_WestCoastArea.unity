@@ -135478,8 +135478,8 @@ MonoBehaviour:
     isFinalStep: 0
   windEffectPrefab: {fileID: 5344841382174370764, guid: 2f80c33210831df4789ff90044b585b0, type: 3}
   player: {fileID: 203188397}
-  idleSecondsBeforeWind: 2
-  cooldownAfterDismiss: 4
+  idleSecondsBeforeWind: 6
+  cooldownAfterDismiss: 10
 --- !u!4 &1097827657
 Transform:
   m_ObjectHideFlags: 0
@@ -175301,7 +175301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7769912553649625230, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8481719861912454008, guid: 60c8ac60bffe8694a9bca2d76b7d6081, type: 3}
       propertyPath: m_AnchorMax.x
@@ -176183,6 +176183,7 @@ GameObject:
   - component: {fileID: 1717529547}
   - component: {fileID: 8560442972862952239}
   - component: {fileID: 8560442972862952240}
+  - component: {fileID: 8560442972862952241}
   m_Layer: 0
   m_Name: beachnpc1
   m_TagString: Untagged
@@ -177027,6 +177028,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8560442972862952241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878175844829083824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: 6cc0a788509dd1b42940f09d32cef50e, type: 2}
+  controller: {fileID: 1097827656}
 --- !u!212 &8560442973573096784
 SpriteRenderer:
   m_ObjectHideFlags: 0

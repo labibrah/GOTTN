@@ -29759,6 +29759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnedChest
       objectReference: {fileID: 0}
+    - target: {fileID: 4907291144626464245, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6776920915619317865, guid: 6ad508775d64aee478c61b889a22a24f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.302857

@@ -8,6 +8,7 @@ public class RevealHiddenChest : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("totemChestOpened = " + GameProgress.Instance.totemChestOpened);
         if (GameProgress.Instance != null && GameProgress.Instance.totemChestOpened)
         {
             Destroy(gameObject);
@@ -28,5 +29,10 @@ public class RevealHiddenChest : MonoBehaviour
     void RevealChest()
     {
         gameObject.SetActive(true);
+    }
+    void OnDestroy()
+    {
+        if (_questGiver != null && _listener != null)
+            _questGiver.questComplete.UnregisterListener(_listener);
     }
 }

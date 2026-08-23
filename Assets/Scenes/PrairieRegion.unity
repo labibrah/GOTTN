@@ -126142,6 +126142,10 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 129998898}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
       propertyPath: coinCollected
       value: 
       objectReference: {fileID: 11400000, guid: 9caf3a461269bf64ba80b854a1c49589, type: 2}
@@ -126150,6 +126154,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458a71df944303f439984601cc275e38, type: 3}
+--- !u!82 &129998898 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 84233769071429966, guid: 458a71df944303f439984601cc275e38, type: 3}
+  m_PrefabInstance: {fileID: 129998897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &198308507
 MonoBehaviour:
   m_ObjectHideFlags: 0

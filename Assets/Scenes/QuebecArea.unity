@@ -76428,6 +76428,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1262139061}
+  - {fileID: 1460530122}
   - {fileID: 1832380786}
   - {fileID: 1680769653}
   - {fileID: 162480272}
@@ -76797,7 +76798,7 @@ PrefabInstance:
       objectReference: {fileID: 1526576028}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: dialogs.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: firstInteractionDone
@@ -76810,18 +76811,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
-      value: "Here, you will find some of the friendliest people in Canada \u2014
-        though they may greet you in French before they greet you in English!"
+      value: Here, you will find some of the friendliest people in Canada, though
+        they may greet you in French before they greet you in English!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[2]'
-      value: Do not worry if you feel a little lost Quebec has a way of making everyone
-        feel delightfully confused at first.
+      value: We are enjoying a warm tourtiere a traditional Quebec meat pie eaten
+        during the winter season.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[3]'
-      value: "We are enjoying a warm tourti\xE8re a traditional Quebec meat pie eaten
-        during the winter season."
+      value: Head up someone will help you!
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[4]'
@@ -77692,8 +77692,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[2]'
-      value: "These small cabins on the ice are more than just shelter \u2014 they
-        are a place where community and tradition come alive."
+      value: These small cabins on the ice are more than just shelter, they are a
+        place where community and tradition come alive.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[3]'
@@ -77895,6 +77895,236 @@ MonoBehaviour:
   rockToRemove: {fileID: 1262264891}
   objectToSpawn: {fileID: 366982280}
   playerInZone: 0
+--- !u!1001 &1460530121
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1041739360}
+    m_Modifications:
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 1219408644}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 254548546}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: dialogActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: ContinueIndicator
+      value: 
+      objectReference: {fileID: 1526576028}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: dialogs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: firstInteractionDone
+      value: 
+      objectReference: {fileID: 11400000, guid: 7524f65cb611ce34fb731ba52adb50d3, type: 2}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[0]'
+      value: 'The sign reads: These cabins are for ice fishing ONLY!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[1]'
+      value: Ice fishing is serious business around here, Explorer.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[2]'
+      value: Do not let anyone catch you in there without a fishing rod!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[3]'
+      value: Kept the fish in the green area by holding and releaing left click
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[4]'
+      value: Once the bar fills up you get a reward!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[5]'
+      value: but if you fail to fill the bar you lose
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[6]'
+      value: Don't worry you can try again but pushing Q again
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375471501496390493, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: 'dialogs.Array.data[7]'
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19217972
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.21542393
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1689
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -43.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Size.x
+      value: 6.700165
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Size.y
+      value: 3.2045407
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.27711916
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.9222703
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 1.8499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.71999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438987218208982256, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878175846411520225, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Name
+      value: sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Size.x
+      value: 6.5501614
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Size.y
+      value: 4.172152
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.061773658
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.4860756
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 2.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 1.8499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.71999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931083405427719504, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560442972314682239, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8db2d334a38fc8f4b82abfce3ae13c8e, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+--- !u!4 &1460530122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6185436774702379834, guid: 297c92344429afa4583d299f846b19f5, type: 3}
+  m_PrefabInstance: {fileID: 1460530121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1482227367 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2300872500005676521, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
@@ -77967,6 +78197,10 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1482654080}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
       propertyPath: coinCollected
       value: 
       objectReference: {fileID: 11400000, guid: 880c84bea0b36f941abc55b050beafb8, type: 2}
@@ -77975,6 +78209,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458a71df944303f439984601cc275e38, type: 3}
+--- !u!82 &1482654080 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 84233769071429966, guid: 458a71df944303f439984601cc275e38, type: 3}
+  m_PrefabInstance: {fileID: 1482654079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1487394019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100046,7 +100285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[3]'
-      value: Keep the fish in the green area by holding left click.
+      value: Keep the fish in the hook area by with E.
       objectReference: {fileID: 0}
     - target: {fileID: 6610298952553556158, guid: 6f33585c79d1b3c41b5ae35e609bb957, type: 3}
       propertyPath: 'dialogs.Array.data[4]'

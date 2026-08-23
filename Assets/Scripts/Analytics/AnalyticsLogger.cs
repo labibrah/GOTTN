@@ -55,6 +55,8 @@ public class AnalyticsLogger : MonoBehaviour
     private const string PositionHeader =
         "participant_id,session_id,scene,timestamp,x,y";
 
+    private bool loggingEnabled = false;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -97,6 +99,8 @@ public class AnalyticsLogger : MonoBehaviour
 
     public void SceneEnter(string sceneName)
     {
+        if (!loggingEnabled) return;
+
         // If a previous scene wasn't explicitly exited (e.g. abrupt scene
         // load), flush it first so data isn't silently dropped.
         if (sceneActive)
@@ -113,6 +117,7 @@ public class AnalyticsLogger : MonoBehaviour
 
     public void SceneExit()
     {
+        if (!loggingEnabled || !sceneActive) return;
         if (!sceneActive) return;
 
         float duration = Time.time - sceneEnterTime;
@@ -252,6 +257,14 @@ public class AnalyticsLogger : MonoBehaviour
             foreach (var row in rows)
                 writer.WriteLine(row);
         }
+    }
+
+    public void SetParticipant(string id, string relativeOutputFolder)
+    {
+        participantId = id;
+        outputFolder = relativeOutputFolder;
+        loggingEnabled = true;
+        Debug.Log($"Participant set: {id}, output folder (relative): {outputFolder}");
     }
 
     void OnApplicationQuit()

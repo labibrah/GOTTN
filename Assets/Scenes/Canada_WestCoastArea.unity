@@ -91920,6 +91920,10 @@ PrefabInstance:
       value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 493418848}
+    - target: {fileID: 4532100515497794350, guid: 458a71df944303f439984601cc275e38, type: 3}
       propertyPath: coinCollected
       value: 
       objectReference: {fileID: 11400000, guid: 582583c63fbe72b42b88028aeac78fb9, type: 2}
@@ -91928,6 +91932,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458a71df944303f439984601cc275e38, type: 3}
+--- !u!82 &493418848 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 84233769071429966, guid: 458a71df944303f439984601cc275e38, type: 3}
+  m_PrefabInstance: {fileID: 493418847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &551433174
 GameObject:
   m_ObjectHideFlags: 0
@@ -135478,8 +135487,8 @@ MonoBehaviour:
     isFinalStep: 0
   windEffectPrefab: {fileID: 5344841382174370764, guid: 2f80c33210831df4789ff90044b585b0, type: 3}
   player: {fileID: 203188397}
-  idleSecondsBeforeWind: 2
-  cooldownAfterDismiss: 4
+  idleSecondsBeforeWind: 6
+  cooldownAfterDismiss: 10
 --- !u!4 &1097827657
 Transform:
   m_ObjectHideFlags: 0
@@ -176183,6 +176192,7 @@ GameObject:
   - component: {fileID: 1717529547}
   - component: {fileID: 8560442972862952239}
   - component: {fileID: 8560442972862952240}
+  - component: {fileID: 8560442972862952241}
   m_Layer: 0
   m_Name: beachnpc1
   m_TagString: Untagged
@@ -177027,6 +177037,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8560442972862952241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878175844829083824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fea3f2089f58d469730d1f3652f885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaExploredNotifier
+  targetFlag: {fileID: 11400000, guid: 6cc0a788509dd1b42940f09d32cef50e, type: 2}
+  controller: {fileID: 1097827656}
 --- !u!212 &8560442973573096784
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -160,7 +160,7 @@ public class FishingMiniGame : MonoBehaviour
 
     void Hook()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetKey(KeyCode.E))
         {
             hookPullvelocity += hookPullPower * Time.deltaTime;
         }

@@ -53,10 +53,9 @@ public class GameManager : MonoBehaviour
 //        SceneManager.LoadScene(startingSceneName);
 //#endif
 
-        SceneManager.LoadScene(startingSceneName);
+        //SceneManager.LoadScene(startingSceneName);
 
-        tutorialIntroShown.runtimeValue = false;
-        houseIntroShown.runtimeValue = false;
+       
     }
 
     public void PlaySound(AudioClip clip)
